@@ -42,7 +42,7 @@
                  <div><img src="{{ asset('assets/images_gallery/'.$propImage->image.'') }}" alt="Image" class="img-fluid"></div>
 
                 @endforeach
-             
+
             </div>
           </div>
           <div class="bg-white property-body border-bottom border-left border-right">
@@ -53,19 +53,19 @@
               <div class="col-md-6">
                 <ul class="property-specs-wrap mb-3 mb-lg-0  float-lg-right">
                 <li>
-                  <span class="property-specs">Beds</span>
+                  <span class="property-specs">Cuartos</span>
                   <span class="property-specs-number">{{ $singleProp->beds }} <sup>+</sup></span>
-                  
+
                 </li>
                 <li>
-                  <span class="property-specs">Baths</span>
+                  <span class="property-specs">Baños</span>
                   <span class="property-specs-number">{{ $singleProp->baths }}</span>
-                  
+
                 </li>
                 <li>
-                  <span class="property-specs">SQ FT</span>
+                  <span class="property-specs">Mts2</span>
                   <span class="property-specs-number">{{ $singleProp->sq_ft }}</span>
-                  
+
                 </li>
               </ul>
               </div>
@@ -84,22 +84,22 @@
                 <strong class="d-block">${{ $singleProp->price_sqft	 }}</strong>
               </div>
             </div>
-            <h2 class="h4 text-black">More Info</h2>
+            <h2 class="h4 text-black">Mas Informacion</h2>
             <p>
                 {{ $singleProp->more_info	 }}
             </p>
-            
+
             <div class="row no-gutters mt-5">
               <div class="col-12">
-                <h2 class="h4 text-black mb-3">Gallery</h2>
+                <h2 class="h4 text-black mb-3">Galeria</h2>
               </div>
               @foreach ($propImages as $propImage)
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <a href="{{ asset('assets/images_gallery/'.$propImage->image.'') }}" class="image-popup gal-item"><img src="{{ asset('assets/images_gallery/'.$propImage->image.'') }}" alt="Image" class="img-fluid"></a>
                 </div>
               @endforeach
-             
-             
+
+
             </div>
           </div>
         </div>
@@ -107,10 +107,10 @@
 
           <div class="bg-white widget border rounded">
 
-            <h3 class="h4 text-black widget-title mb-3">Contact Agent</h3>
+            <h3 class="h4 text-black widget-title mb-3">Agente de Contacto</h3>
             @if(isset(Auth::user()->id))
               @if($validateFormCount > 0)
-                <p class="alert alert-success">you aleardy sent a request to this property</p>
+                <p class="alert alert-success">inicie sesión para enviar una solicitud a esta propiedad</p>
               @else
                 <form method="POST" action="{{ route('insert.request', $singleProp->id) }}" class="form-contact-agent">
                   @csrf
@@ -122,7 +122,7 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name">Nombre</label>
                     <input type="text" name="name" id="name" class="form-control">
                   </div>
                   @error('name')
@@ -157,14 +157,14 @@
                 </form>
 
               @endif
-            @else 
-             <p class="alert alert-success">login to send a request to this property </p> 
-            @endif  
+            @else
+             <p class="alert alert-success">inicie sesión para enviar una solicitud a esta propiedad</p>
+            @endif
           </div>
 
           <div class="bg-white widget border rounded">
 
-            <h3 class="h4 text-black widget-title mb-3">Save this Property</h3>
+            <h3 class="h4 text-black widget-title mb-3">Guardar esta Propiedad</h3>
             @if(isset(Auth::user()->id))
               @if($validateSavingPropsCount > 0)
                 <input type="submit" name="submit" id="phone" class="btn btn-primary" disabled value="you saved this property">
@@ -181,16 +181,16 @@
                   <div class="form-group">
                     <input type="hidden" value="{{ $singleProp->image }}" name="image" id="name" class="form-control">
                   </div>
-                
+
                   <div class="form-group">
                     <input type="hidden"  value="{{ $singleProp->location }}" name="location" id="email" class="form-control">
                   </div>
-                
+
                   <div class="form-group">
                     <input type="hidden" value="{{ $singleProp->price }}" name="price" id="phone" class="form-control">
                   </div>
 
-    
+
 
 
                   <div class="form-group">
@@ -199,10 +199,10 @@
                 </form>
 
               @endif
-            @else 
-              <p class="alert alert-success">login to send a save this property </p> 
-            @endif  
-         
+            @else
+              <p class="alert alert-success">inicie sesión para enviar un guardar esta propiedad</p>
+            @endif
+
           </div>
 
           <div class="bg-white widget border rounded">
@@ -210,12 +210,12 @@
                 <div class="px-3" style="margin-left: -15px;">
                   <a href="https://www.facebook.com/sharer/sharer.php?u={{ route('single.prop', $singleProp->id) }}&quote={{ $singleProp->title }}" class="text-decoration-none pt-3 pb-3 pr-3 pl-0"><span class="icon-facebook"></span></a>
                   <a  href="https://twitter.com/intent/tweet?text={{ $singleProp->title }}&url={{ route('single.prop', $singleProp->id) }}" class="text-decoration-none pt-3 pb-3 pr-3 pl-0"><span class="icon-twitter"></span></a>
-                  <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ route('single.prop', $singleProp->id) }}" class="text-decoration-none pt-3 pb-3 pr-3 pl-0"><span class="icon-linkedin"></span></a>    
-                </div>            
+                  <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ route('single.prop', $singleProp->id) }}" class="text-decoration-none pt-3 pb-3 pr-3 pl-0"><span class="icon-linkedin"></span></a>
+                </div>
           </div>
 
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -226,11 +226,11 @@
       <div class="row">
         <div class="col-12">
           <div class="site-section-title mb-5">
-            <h2>Related Properties</h2>
+            <h2>Propiedades relacionadas</h2>
           </div>
         </div>
       </div>
-    
+
       <div class="row mb-5">
         @if ($relatedProps->count() > 0)
             @foreach ($relatedProps as $relatedProp)
@@ -238,7 +238,7 @@
                 <div class="property-entry h-100">
                 <a href="{{ route('single.prop', $relatedProp->id) }}" class="property-thumbnail">
                     <div class="offer-type-wrap">
-                    <span class="offer-type bg-success">Rent</span>
+                    <span class="offer-type bg-success">Alquilar</span>
                     </div>
                     <img src="{{ asset('assets/images/'.$relatedProp->image.'') }}" alt="Image" class="img-fluid">
                 </a>
@@ -248,33 +248,33 @@
                     <strong class="property-price text-primary mb-3 d-block text-success">${{ $relatedProp->price }}</strong>
                     <ul class="property-specs-wrap mb-3 mb-lg-0">
                     <li>
-                        <span class="property-specs">Beds</span>
+                        <span class="property-specs">Cuartos</span>
                         <span class="property-specs-number">{{ $relatedProp->beds }} <sup>+</sup></span>
-                        
+
                     </li>
                     <li>
-                        <span class="property-specs">Baths</span>
+                        <span class="property-specs">Baños</span>
                         <span class="property-specs-number">{{ $relatedProp->baths }}</span>
-                        
+
                     </li>
                     <li>
-                        <span class="property-specs">SQ FT</span>
+                        <span class="property-specs">Mts2</span>
                         <span class="property-specs-number">{{ $relatedProp->sq_ft }}</span>
-                        
+
                     </li>
                     </ul>
-    
+
                 </div>
                 </div>
-            </div> 
+            </div>
             @endforeach
         @else
-            <h3 class="alert alert-success">there are not related proprities for now</h3>
+            <h3 class="alert alert-success">No hay este tipo de propiedad en el momento</h3>
         @endif
-     
-        
 
-       
+
+
+
       </div>
     </div>
 @endsection

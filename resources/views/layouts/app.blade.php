@@ -40,16 +40,16 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
     <div id="app" style="margin-top: -25px">
 
-        <div class="site-navbar mt-4 border-4 border-black">
-            <div class="container py-1 border-4 border-black">
-                <div class="row align-items-center border-4 border-red-600">
-                    <div class="col-8 col-md-8 col-lg-4 border-4 border-black">
+        <div class="site-navbar mt-4 ">
+            <div class="container py-1">
+                <div class="row align-items-center ">
+                    <div class="col-8 col-md-8 col-lg-4 ">
                         <h1 class="mb-0">
                             <a href="{{ url('/') }}" class="text-decoration-none text-white h2 mb-0">
                                 <img src="{{ asset('assets/images/ph.png') }}" alt="" srcset="">
