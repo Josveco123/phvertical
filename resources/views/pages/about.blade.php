@@ -6,7 +6,7 @@
     <div class="container">
       <div class="row align-items-center justify-content-center text-center">
         <div class="col-md-10">
-          <h1 class="mb-2">About Homeland</h1>
+          <h1 class="mb-2">Colombia</h1>
         </div>
       </div>
     </div>
@@ -20,11 +20,11 @@
         </div>
         <div class="col-md-5 ml-auto"  data-aos="fade-up" data-aos-delay="200">
           <div class="site-section-title">
-            <h2>Our Company</h2>
+            <h2>Nuestra Compañia</h2>
           </div>
           <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus in cum odio./p>
           <p>Illum repudiandae ratione facere explicabo. Consequatur dolor optio iusto, quos autem voluptate ea? Sunt laudantium fugiat, mollitia voluptate? Modi blanditiis veniam nesciunt architecto odit voluptatum tempore impedit magnam itaque natus!</p>
-          <p><a href="#" class="btn btn-outline-primary rounded-0 py-2 px-5">Read More</a></p>
+          <p><a href="#" class="btn btn-outline-primary rounded-0 py-2 px-5">Leer mas</a></p>
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@
     <div class="row mb-5 justify-content-center"  data-aos="fade-up" >
       <div class="col-md-7">
         <div class="site-section-title text-center">
-          <h2>Leadership</h2>
+          <h2>Liderazgo</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magnam officiis ipsa eum pariatur labore fugit amet eaque iure vitae, repellendus laborum in modi reiciendis quis! Optio minima quibusdam, laboriosam.</p>
         </div>
       </div>
@@ -48,8 +48,8 @@
 
             <div class="text">
 
-              <h2 class="mb-2 font-weight-light text-black h4">Megan Smith</h2>
-              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <h2 class="mb-2 font-weight-light text-black h4">Carlos Beltran</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Agente de bienes raíces</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate, vitae minus obcaecati provident beatae!</p>
               <p>
                 <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
@@ -68,8 +68,8 @@
 
             <div class="text">
 
-              <h2 class="mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
-              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <h2 class="mb-2 font-weight-light text-black h4">Alfredo Pineda</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Agente de bienes raíces</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cumque vitae voluptates culpa earum similique corrupti itaque veniam doloribus amet perspiciatis recusandae sequi nihil tenetur ad, modi quos id magni!</p>
               <p>
                 <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
@@ -88,8 +88,8 @@
 
             <div class="text">
 
-              <h2 class="mb-2 font-weight-light text-black h4">Philip Martin</h2>
-              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <h2 class="mb-2 font-weight-light text-black h4">Luis Vanegas</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Agente de bienes raíces</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores illo iusto, inventore, iure dolorum officiis modi repellat nobis, praesentium perspiciatis, explicabo. Atque cupiditate, voluptates pariatur odit officia libero veniam quo.</p>
               <p>
                 <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
@@ -113,13 +113,13 @@
       <div class="row mb-5 justify-content-center">
         <div class="col-md-7">
           <div class="site-section-title text-center">
-            <h2>Our Agents</h2>
+            <h2>Nuestros Agentes</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magnam officiis ipsa eum pariatur labore fugit amet eaque iure vitae, repellendus laborum in modi reiciendis quis! Optio minima quibusdam, laboriosam.</p>
           </div>
         </div>
       </div>
       <div class="row">
-          
+
         <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
           <div class="team-member">
 
@@ -127,7 +127,7 @@
 
             <div class="text">
 
-              <h2 class="mb-2 font-weight-light text-black h4">Steven Ericson</h2>
+              <h2 class="mb-2 font-weight-light text-black h4">Carlos Beltran</h2>
               <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates sed qui at harum ipsum earum voluptas a unde error sapiente, sint perspiciatis, fugiat neque iure rerum repellendus tempora odio doloribus.</p>
               <p>
@@ -147,8 +147,8 @@
 
             <div class="text">
 
-              <h2 class="mb-2 font-weight-light text-black h4">Nathan Dumlao</h2>
-              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <h2 class="mb-2 font-weight-light text-black h4">Alfredo Pineda</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Agente de bienes raíces</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nobis commodi rerum dicta, nulla. Delectus neque hic deserunt consequuntur esse facere, necessitatibus corrupti! Blanditiis ratione consequuntur beatae adipisci, voluptatum consequatur.</p>
               <p>
                 <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
@@ -167,8 +167,8 @@
 
             <div class="text">
 
-              <h2 class="mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
-              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <h2 class="mb-2 font-weight-light text-black h4">Luis Vanegas</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Agente de bienes raíces</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nam tenetur molestiae maiores officiis consectetur, distinctio aperiam in illum praesentium corrupti, harum porro reiciendis magnam non enim dolorem aut explicabo.</p>
               <p>
                 <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
@@ -190,7 +190,7 @@
       <div class="row justify-content-center mb-5">
         <div class="col-md-7 text-center">
           <div class="site-section-title">
-            <h2>Frequently Ask Questions</h2>
+            <h2>Preguntas frecuentes</h2>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maiores quisquam saepe architecto error corporis aliquam. Cum ipsam a consectetur aut sunt sint animi, pariatur corporis, eaque, deleniti cupiditate officia.</p>
         </div>
@@ -209,7 +209,7 @@
               </div>
             </div>
           </div> <!-- .accordion-item -->
-          
+
           <div class="accordion-item">
             <h3 class="mb-0 heading">
               <a class="btn-block" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">How much pay for 3  months?<span class="icon"></span></a>
@@ -246,8 +246,8 @@
         </div>
         </div>
       </div>
-    
+
     </div>
   </div>
 
-@endsection  
+@endsection

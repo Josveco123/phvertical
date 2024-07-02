@@ -15,13 +15,13 @@
                           </div>
                 @endif
             </div>
-          <h5 class="card-title mb-4 d-inline">Admins</h5>
+          <h5 class="card-title mb-4 d-inline">Administrador</h5>
          <a  href="{{ route('admins.create') }}" class="btn btn-primary mb-4 text-center float-right">Create Admins</a>
           <table class="table">
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">adminname</th>
+                <th scope="col">Npmbre Administrador</th>
                 <th scope="col">email</th>
               </tr>
             </thead>
@@ -31,13 +31,13 @@
                     <th scope="row">{{ $allAdmin->id }}</th>
                     <td>{{ $allAdmin->name }}</td>
                     <td>{{ $allAdmin->email }}</td>
-                   
+
                   </tr>
-                 
+
                 @endforeach
-             
+
             </tbody>
-          </table> 
+          </table>
         </div>
       </div>
     </div>
