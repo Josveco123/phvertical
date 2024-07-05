@@ -21,8 +21,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
-
 // aqui en adelante lo nuevo
 
 Route::middleware(['auth'])->group(function () {
@@ -107,3 +105,5 @@ Route::group(['prefix' => 'admin',], function () {
 
     Route::get('/delete-props/{id}', [AdminsController::class, 'deleteProps'])->name('props.delete');
 });
+
+require __DIR__.'/auth.php';

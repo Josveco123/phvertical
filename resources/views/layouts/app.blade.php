@@ -32,8 +32,8 @@
     <link rel="stylesheet" href="{{ asset('assets/fonts/flaticon/font/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/fl-bigmug-line.css') }}">
       <!-- link para uso de bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="{{ asset('assets/css/aos.css') }}">
 
@@ -41,6 +41,7 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <title>pagina leyouts.app</title>
 </head>
 
 <body>
@@ -49,25 +50,24 @@
         <div class="site-navbar mt-4 ">
             <div class="container py-1">
                 <div class="row align-items-center ">
-                    <div class="col-8 col-md-8 col-lg-4 ">
+                    <div class="col-3 col-md-3 col-lg-2 ">
                         <h1 class="mb-0">
-                            <a href="{{ url('/') }}" class="text-decoration-none text-white h2 mb-0">
-                                <img src="{{ asset('assets/images/ph.png') }}" alt="" srcset="">
+                            <a href="{{ url('/') }}" class="flex flex-row w-32 h-auto text-decoration-none text-white h2 mb-0">
+                                <span class="text-red-600  font-weight-bold">P</span><span class="text-blue-600 font-weight-bold font-light ">H</span><span class="text-yellow-500 text-base">vertical</span>
                             </a>
                         </h1>
                     </div>
-                    <div class="col-4 col-md-4 col-lg-8">
+                    <div class="col-9 col-md-9 col-lg-10">
                         <nav class="site-navigation text-right text-md-right" role="navigation">
 
                             <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
-                                <a href="#" class="site-menu-toggle js-menu-toggle text-white">
-                                    <span
-                                        class="icon-menu h3">
-                                    </span>
+                                <a href="#" class="site-menu-toggle js-menu-toggle text-white "  data-bs-target="#navbarSupportedContent"  data-bs-toggle="offcanvas" >
+                                    <span class="icon-menu h3"></span>
                                 </a>
                             </div>
 
-                            <ul class="site-menu js-clone-nav d-none d-lg-block">
+
+                            <ul class="site-menu js-clone-nav d-none d-lg-block text-xs">
                                 <li class="active">
                                     <a href="{{ url('/') }}">Inicio</a>
                                 </li>
@@ -85,7 +85,7 @@
 
                                     </ul>
                                 </li>
-                                <li><a href="{{ route('about') }}">Acerca de</a></li>
+                                <li><a href="{{ route('about') }}">Nosotros</a></li>
                                 <li><a href="{{ route('contact') }}">Contacto</a></li>
 
                                 @guest
