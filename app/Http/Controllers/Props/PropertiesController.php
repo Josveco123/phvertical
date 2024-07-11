@@ -133,7 +133,7 @@ class PropertiesController extends Controller
 
     public function propsRent() {
 
-        $type = "Alquilar";
+        $type = "Rentar";
 
         $propsRent = Property::select()->where('type', $type)
          ->get();
@@ -146,7 +146,7 @@ class PropertiesController extends Controller
 
     public function displayByHomeType($hometype) {
 
-  
+
 
         $propsByHomeType = Property::select()->where('home_type', $hometype)
          ->get();

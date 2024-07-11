@@ -7,7 +7,7 @@
     <div class="container">
       <div class="row align-items-center justify-content-center text-center">
         <div class="col-md-10">
-          <h1 class="mb-2">Alquilar Propiedad</h1>
+          <h1 class="mb-2">Rentar Propiedad</h1>
 
         </div>
       </div>
@@ -22,7 +22,7 @@
       <div class="row">
         <div class="col-12">
           <div class="site-section-title mb-5">
-            <h2>Alquilar Propiedad</h2>
+            <h2>Rentar Propiedad</h2>
           </div>
         </div>
       </div>

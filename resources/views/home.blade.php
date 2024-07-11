@@ -41,8 +41,8 @@
                           <span class="icon icon-arrow_drop_down"></span>
                           <select name="list_types" id="list-types" class="form-control d-block rounded-0">
                             <option value="Condo">Condominio</option>
-                            <option value="Commercial">Commercial</option>
-                            <option value="Land">Terrenos</option>
+                            <option value="Comercial">Comercial</option>
+                            <option value="Terreno">Terrenos</option>
                           </select>
                         </div>
                       </div>
@@ -51,9 +51,9 @@
                         <div class="select-wrap">
                           <span class="icon icon-arrow_drop_down"></span>
                           <select name="offer_types" id="offer-types" class="form-control d-block rounded-0">
-                            <option value="Buy">Comprar</option>
-                            <option value="Rent">Alquilar</option>
-                            <option value="Lease">Vender</option>
+                            <option value="Comprar">Comprar</option>
+                            <option value="Rentar">Rentar</option>
+                            <option value="Vender">Vender</option>
                           </select>
                         </div>
                       </div>
@@ -62,11 +62,11 @@
                         <div class="select-wrap">
                           <span class="icon icon-arrow_drop_down"></span>
                           <select name="select_city" id="select-city" class="form-control d-block rounded-0">
-                            <option value="New York">Sincelejo</option>
-                            <option value="Brooklyn">Barranquilla</option>
-                            <option value="London">Cartagena</option>
-                            <option value="Tokyo">Monteria</option>
-                            <option value="Cairo">Santa Marta</option>
+                            <option value="Sincelejo">Sincelejo</option>
+                            <option value="Barranquilla">Barranquilla</option>
+                            <option value="Cartagena">Cartagena</option>
+                            <option value="Monteria">Monteria</option>
+                            <option value="Santa Marta">Santa Marta</option>
                           </select>
                         </div>
                       </div>
@@ -87,8 +87,8 @@
                       <div class="ml-auto d-flex align-items-center">
                         <div>
                           <a href="{{ route('home') }}" class="text-decoration-none  view-list px-3 border-right active">Todas</a>
-                          <a href="{{ route('buy.prop') }}" class="text-decoration-none  view-list px-3 border-right">Alquilar</a>
-                          <a href="{{ route('rent.prop') }}" class="text-decoration-none  view-list px-3">Comprar</a>
+                          <a href="{{ route('buy.prop') }}" class="text-decoration-none  view-list px-3 border-right">Comprar</a>
+                          <a href="{{ route('rent.prop') }}" class="text-decoration-none  view-list px-3">Rentar</a>
                           <a href="{{ route('price.asc.prop') }}" class="text-decoration-none  view-list px-3">Por Precio Ascendente</a>
                           <a href="{{ route('price.desc.prop') }}" class="text-decoration-none  view-list px-3">Por precio Desendente</a>
                         </div>

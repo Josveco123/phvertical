@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title',200)->nullable(false);
             $table->string('price',50)->nullable(false); //precio
-            $table->string('image',200)->nullable(false); //fotos de la vicienda
+            $table->string('image',200)->nullable(false); //fotos de la vivienda
             $table->string('beds',50)->nullable(false); //camas
             $table->string('baths',50)->nullable(false); //baños
             $table->string('sq_ft',50)->nullable(false); //Area construida

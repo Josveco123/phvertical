@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
         $this->call(RequestSeeder::class);
         $this->call(savedpropSeeder::class);
         $this->call(adminSeeder::class);
+        $this->call(PropImageSeeder::class);
     }
 }

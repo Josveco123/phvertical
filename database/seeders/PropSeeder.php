@@ -62,7 +62,7 @@ class PropSeeder extends Seeder
             'more_info' => 'Dramatically emDramatically empower inexpensive human capital before excellent services. Objectively leverage existing interactive e-services with optimal Dramatically empower inexpensive human capital before excellent services. Objectively leverage existing interactive e-services with optimal power inexpensive human capital before excellent services. Objectively leverage existing interactive e-services with optimal',
             'location' => 'Avenida las acacias Norte\n',
             'agent_name' => 'Luis rodriguez',
-            'type' => 'Alquilar',
+            'type' => 'Rentar',
             'city' => 'Sincelejo',
             'created_at' => '2021-07-06 08:36:14',
             'updated_at' => '2021-07-06 08:36:14'
@@ -81,6 +81,22 @@ class PropSeeder extends Seeder
             'location' => 'Salida la pamira las Flores\n',
             'agent_name' => 'Luis Salazar',
             'type' => 'Comprar',
+            'city' => 'Sincelejo',
+        ]);
+        Property::create([
+            'title' => 'BARRIO FORD, CLL 2da. ',
+            'price' => '1,400,000,000',
+            'image' => 'hero_bg_7.jpg',
+            'beds' => '6',
+            'baths' => '6',
+            'sq_ft' => '2,000',
+            'home_type' => 'Condominio',
+            'year_built' => '2010',
+            'price_sqft' => '20000',
+            'more_info' => 'Esta residencia cuenta con todos los servisios publicos, ademas de disponer de garaje dobre, asi como piscina y cancha de tenir, ademas esta apta para adecuacion de varias divisiones en el primer piso que le servirian para crear mas oficinas',
+            'location' => 'Segunda calle barrio for frente al parque\n',
+            'agent_name' => 'Alfonzo pacheco',
+            'type' => 'Rentar',
             'city' => 'Sincelejo',
         ]);
     }

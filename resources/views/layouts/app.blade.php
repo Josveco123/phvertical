@@ -53,7 +53,9 @@
                     <div class="col-3 col-md-3 col-lg-2 ">
                         <h1 class="mb-0">
                             <a href="{{ url('/') }}" class="flex flex-row w-32 h-auto text-decoration-none text-white h2 mb-0">
-                                <span class="text-red-600  font-weight-bold">P</span><span class="text-blue-600 font-weight-bold font-light ">H</span><span class="text-yellow-500 text-base">vertical</span>
+                                <!-- Scripts    <span class="text-red-600  font-weight-bold">P</span><span class="text-blue-600 font-weight-bold font-light ">H</span><span class="text-yellow-500 text-base">vertical</span>
+                                -->
+                            <img class="w-14 " src="{{asset('assets/images/logo ph.jpg')}}" alt="" srcset="">
                             </a>
                         </h1>
                     </div>
@@ -72,7 +74,7 @@
                                     <a href="{{ url('/') }}">Inicio</a>
                                 </li>
                                 <li><a href="{{ route('buy.prop') }}">Comprar</a></li>
-                                <li><a href="{{ route('rent.prop') }}">Alquilar</a></li>
+                                <li><a href="{{ route('rent.prop') }}">Rentar</a></li>
                                 <li class="has-children">
                                     <a href="#">Propiedades</a>
                                     <ul class="dropdown arrow-top">
@@ -165,7 +167,7 @@
                             <ul class="list-unstyled">
                                 <li><a href="#">Inicio</a></li>
                                 <li><a href="#">Comprar</a></li>
-                                <li><a href="#">Alquilar</a></li>
+                                <li><a href="#">Rentar</a></li>
                                 <li><a href="#">Propiedades</a></li>
                             </ul>
                         </div>

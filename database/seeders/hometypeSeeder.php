@@ -17,10 +17,10 @@ class hometypeSeeder extends Seeder
         'hometypes'=> 'Condominio',
        ]);
        HomeType::create([
-        'hometypes'=> 'Terreno',
+        'hometypes'=> 'Comercial',
        ]);
        HomeType::create([
-        'hometypes'=> 'Comercial',
+        'hometypes'=> 'Terrenos',
        ]);
     }
 }
