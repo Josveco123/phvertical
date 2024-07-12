@@ -29,11 +29,11 @@
 
       <div class="row mb-5">
         @if ($allRequests->count() > 0)
-            @foreach ($allRequests as $relatedProp)
+            @foreach ($relations as $relation)
             <div class="col-md-6 col-lg-4">
                 <div class="property-entry h-100">
-                <a href="{{ route('single.prop', $relatedProp->prop_id) }}" class="btn btn-success">
-                   Ir a esta propiedad
+                <a href="{{ route('single.prop', $relation['id']) }}" class="btn btn-success">
+                  <span>Ir a esta propiedad ==> </span> <span class="ml-4 text-orange-500 font-bold ">{{$relation['title']}}</span>
                 </a>
 
                 </div>
