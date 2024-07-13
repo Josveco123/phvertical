@@ -57,10 +57,11 @@ Route::group(['prefix' => 'users'], function () {
 
 
 
-Route::get('admin/login', [AdminsController::class, 'viewLogin'])->name('view.login')->middleware('checkforauth');
-Route::post('admin/login', [AdminsController::class, 'checkLogin'])->name('check.login');
 
 Route::group(['prefix' => 'admin',], function () {
+
+    Route::get('/login', [AdminsController::class, 'viewLogin'])->name('view.login')->middleware('checkforauth');
+    Route::post('/login', [AdminsController::class, 'checkLogin'])->name('check.login');
 
     Route::get('/index', [AdminsController::class, 'index'])->name('admins.dashboard');
 
