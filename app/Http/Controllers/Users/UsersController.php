@@ -61,4 +61,27 @@ class UsersController extends Controller
             return abort('404');
         }
     }
+
+
+  public function sacarprops($id)
+    {
+
+        // Lógica para eliminar el registro
+       $sprop = SavedProp::findOrFail($id);
+       $sprop->delete();
+
+        // Redireccionar o devolver una respuesta adecuada
+        return redirect()->route('all.saved.props');
+    }
+
+
+    public function sacarrelationprops($id)
+    {
+        $Rprop = AllRequest::where('prop_id', $id)->first();
+
+            $Rprop->delete();
+
+            return redirect()->route('all.requests');
+    }
+
 }

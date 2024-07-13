@@ -108,10 +108,10 @@
                                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
 
                                             <a class="dropdown-item" href="{{ route('all.requests') }}">
-                                                Todas las Solicitudes
+                                                Todas las solicitadas
                                             </a>
                                             <a class="dropdown-item" href="{{ route('all.saved.props') }}">
-                                               Todas las Propiedades
+                                               Todas las posibles
                                             </a>
                                             <a class="dropdown-item" href="{{ route('logout') }}"
                                                 onclick="event.preventDefault();
@@ -207,8 +207,7 @@
                         <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                         <script>
                             document.write(new Date().getFullYear());
-                        </script> Todos los derechos reservados | Esta pagina fue hecha con <i
-                            class="icon-heart text-danger" aria-hidden="true"></i> por <a href="{{ asset('assets/images/logo.png') }}"
+                        </script> Codigo habierto | Esta pagina fue hecha por <a href="{{ asset('assets/images/logojvc.png') }}"
                             target="_blank">Jvc</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>

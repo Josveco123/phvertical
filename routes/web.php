@@ -50,7 +50,11 @@ Route::group(['prefix' => 'props'], function() {
 Route::group(['prefix' => 'users'], function () {
     Route::get('all-requests', [UsersController::class, 'allRequests'])->name('all.requests');
     Route::get('all-saved-props', [UsersController::class, 'allSavedProps'])->name('all.saved.props');
+    Route::delete('sacar-props/{id}', [UsersController::class, 'sacarprops'])->name('sacar.props');
+    Route::delete('sacar-reation/{id}', [UsersController::class, 'sacarrelationprops'])->name('sacar.relation.props');
 });
+
+
 
 
 Route::get('admin/login', [AdminsController::class, 'viewLogin'])->name('view.login')->middleware('checkforauth');
