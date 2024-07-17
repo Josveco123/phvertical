@@ -34,7 +34,7 @@
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="property-entry h-100">
                                 <a href="{{ route('single.prop', $relatedProp->id) }}" class="property-thumbnail">
-                                    <img src="{{ asset('assets/images/' . $relatedProp->image . '') }}" alt="Image"
+                                    <img src="{{ asset('public/assets/images/' . $relatedProp->image . '') }}" alt="Image"
                                         class="img-fluid">
                                 </a>
                                 <div class="p-4 property-body">

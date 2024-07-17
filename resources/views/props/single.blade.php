@@ -3,7 +3,7 @@
 
 @section('content')
 
-<div class="site-blocks-cover inner-page-cover overlay" style="background-image: url({{ asset('assets/images/'.$singleProp->image.'')}});" data-aos="fade">
+<div class="site-blocks-cover inner-page-cover overlay" style="background-image: url({{ asset('public/assets/images/'.$singleProp->image.'')}});" data-aos="fade">
     <div class="container">
       <div class="row align-items-center justify-content-center text-center">
         <div class="col-md-10">
@@ -240,7 +240,7 @@
                     <div class="offer-type-wrap">
                     <span class="offer-type bg-success">Rentar</span>
                     </div>
-                    <img src="{{ asset('assets/images/'.$relatedProp->image.'') }}" alt="Image" class="img-fluid">
+                    <img src="{{ asset('public/assets/images/'.$relatedProp->image.'') }}" alt="Image" class="img-fluid">
                 </a>
                 <div class="p-4 property-body">
                     <h2 class="property-title"><a class="text-decoration-none" href="{{ route('single.prop', $relatedProp->id) }}">{{ $relatedProp->title }}</a></h2>

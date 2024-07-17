@@ -3,7 +3,7 @@
 @section('content')
             <div class="slide-one-item home-slider owl-carousel">
               @foreach ($props as $prop)
-                <div class="site-blocks-cover overlay" style="background-image: url({{ asset('assets/images/'.$prop->image.'') }});" data-aos="fade">
+                <div class="site-blocks-cover overlay" style="background-image: url({{ asset('public/assets/images/'.$prop->image.'') }});" data-aos="fade">
                   <div class="container">
                     <div class="row align-items-center justify-content-center text-center">
                       <div class="col-md-10">
@@ -111,7 +111,7 @@
                           <div class="offer-type-wrap">
                             <span class="offer-type bg-success">{{ $prop->type }}</span>
                           </div>
-                          <img src="{{ asset('assets/images/'.$prop->image .'') }}" alt="Image" class="img-fluid">
+                          <img src="{{ asset('public/assets/images/'.$prop->image .'') }}" alt="Image" class="img-fluid">
                         </a>
                         <div class="p-4 property-body">
                           <h2 class="property-title"><a class="text-decoration-none" href="{{ route('single.prop', $prop->id) }}">{{ $prop->title }}</a></h2>
