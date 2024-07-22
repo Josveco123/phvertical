@@ -3,11 +3,11 @@
 
 @section('content')
 
-<div class="site-blocks-cover inner-page-cover overlay" style="background-image: url({{ asset('public/assets/images/'.$singleProp->image.'')}});" data-aos="fade">
+<div class="site-blocks-cover inner-page-cover overlay" style="background-image: url({{ asset('storage').'/images/'.$singleProp->image}});" data-aos="fade">
     <div class="container">
       <div class="row align-items-center justify-content-center text-center">
         <div class="col-md-10">
-          <span class="d-inline-block text-white px-3 mb-3 property-offer-type rounded">Property Details of</span>
+          <span class="d-inline-block text-white px-3 mb-3 property-offer-type rounded">Detalles de la Propiedad</span>
           <h1 class="mb-2">{{ $singleProp->title }}</h1>
           <p class="mb-5"><strong class="h2 text-success font-weight-bold">${{ $singleProp->price }}</strong></p>
         </div>
@@ -39,7 +39,10 @@
           <div>
             <div class="slide-one-item home-slider owl-carousel">
                 @foreach ($propImages as $propImage)
-                 <div><img src="{{ asset('assets/images_gallery/'.$propImage->image.'') }}" alt="Image" class="img-fluid"></div>
+                 <div>
+                    <img src="{{ asset('storage').'/images_gallery/'.$propImage->image }}" alt="Image" class="img-fluid">
+
+                </div>
 
                 @endforeach
 
@@ -86,7 +89,7 @@
             </div>
             <h2 class="h4 text-black">Mas Informacion</h2>
             <p>
-                {{ $singleProp->more_info	 }}
+                {{ $singleProp->more_info}}
             </p>
 
             <div class="row no-gutters mt-5">
@@ -95,7 +98,7 @@
               </div>
               @foreach ($propImages as $propImage)
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <a href="{{ asset('assets/images_gallery/'.$propImage->image.'') }}" class="image-popup gal-item"><img src="{{ asset('assets/images_gallery/'.$propImage->image.'') }}" alt="Image" class="img-fluid"></a>
+                    <a href="{{ asset('storage').'/images_gallery/'.$propImage->image}}" class="image-popup gal-item"><img src="{{ asset('storage').'/images_gallery/'.$propImage->image }}" alt="Image" class="img-fluid"></a>
                 </div>
               @endforeach
 
@@ -240,7 +243,7 @@
                     <div class="offer-type-wrap">
                     <span class="offer-type bg-success">Rentar</span>
                     </div>
-                    <img src="{{ asset('public/assets/images/'.$relatedProp->image.'') }}" alt="Image" class="img-fluid">
+                    <img src="{{ asset('storage').'/images/'.$relatedProp->image }}" alt="Image" class="img-fluid">
                 </a>
                 <div class="p-4 property-body">
                     <h2 class="property-title"><a class="text-decoration-none" href="{{ route('single.prop', $relatedProp->id) }}">{{ $relatedProp->title }}</a></h2>

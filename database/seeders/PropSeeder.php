@@ -28,8 +28,6 @@ class PropSeeder extends Seeder
             'agent_name' => 'Alcira Perez',
             'type' => 'Comprar',
             'city' => 'Sincelejo',
-            'created_at' => '2023-07-06 08:36:14',
-            'updated_at' => '2023-07-06 08:36:14'
         ]);
         Property::create([
             'title' => 'LOS ALAMOS SUR 127 ',
@@ -46,13 +44,11 @@ class PropSeeder extends Seeder
             'agent_name' => 'Luis rodriguez',
             'type' => 'Comprar',
             'city' => 'Sincelejo',
-            'created_at' => '2021-07-06 08:36:14',
-            'updated_at' => '2021-07-06 08:36:14'
         ]);
         Property::create([
             'title' => 'VENECIA ENTRADA FLORENCIA ',
             'price' => '1,000,000,000',
-            'image' => 'hero_bg_4.jpg',
+            'image' => 'hero_bg_3.jpg',
             'beds' => '3',
             'baths' => '5',
             'sq_ft' => '9,340',
@@ -64,17 +60,15 @@ class PropSeeder extends Seeder
             'agent_name' => 'Luis rodriguez',
             'type' => 'Rentar',
             'city' => 'Sincelejo',
-            'created_at' => '2021-07-06 08:36:14',
-            'updated_at' => '2021-07-06 08:36:14'
         ]);
         Property::create([
             'title' => 'LAS PRIMAVERAS DE PALMIRA ',
             'price' => '1,000,000,000',
-            'image' => 'hero_bg_5.jpg',
+            'image' => 'hero_bg_4.jpg',
             'beds' => '0',
             'baths' => '0',
             'sq_ft' => '10,000',
-            'home_type' => 'Terreno',
+            'home_type' => 'Terrenos',
             'year_built' => '0000',
             'price_sqft' => '200',
             'more_info' => 'Capital before excellent services. Objectively leverage existing interactive e-services with optimal power inexpensive human capital before excellent services. Objectively leverage existing interactive e-services with optimal',
@@ -84,9 +78,9 @@ class PropSeeder extends Seeder
             'city' => 'Sincelejo',
         ]);
         Property::create([
-            'title' => 'BARRIO FORD, CLL 2da. ',
-            'price' => '1,400,000,000',
-            'image' => 'hero_bg_7.jpg',
+            'title' => 'VEREDA SAN MIGUEL 1',
+            'price' => '20,000,000',
+            'image' => 'hero_bg_5.jpg',
             'beds' => '6',
             'baths' => '6',
             'sq_ft' => '2,000',

@@ -4,7 +4,7 @@
 @section('content')
 
     <div class="site-blocks-cover inner-page-cover overlay"
-        style="background-image: url({{ asset('assets/images/hero_bg_2.jpg') }});" data-aos="fade">
+        style="background-image: url({{ asset('storage').'/images/hero_bg_2.jpg' }});" data-aos="fade">
         <div class="container">
             <div class="row align-items-center justify-content-center text-center">
                 <div class="col-md-10">
@@ -34,7 +34,7 @@
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="property-entry h-100">
                                 <a href="{{ route('single.prop', $relatedProp->id) }}" class="property-thumbnail">
-                                    <img src="{{ asset('public/assets/images/' . $relatedProp->image . '') }}" alt="Image"
+                                    <img src="{{ asset('storage').'/images/'.$relatedProp->image }}" alt="Image 1"
                                         class="img-fluid">
                                 </a>
                                 <div class="p-4 property-body">

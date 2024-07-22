@@ -55,7 +55,7 @@
                             <a href="{{ url('/') }}" class="flex flex-row w-32 h-auto text-decoration-none text-white h2 mb-0">
                                 <!-- Scripts    <span class="text-red-600  font-weight-bold">P</span><span class="text-blue-600 font-weight-bold font-light ">H</span><span class="text-yellow-500 text-base">vertical</span>
                                 -->
-                            <img class="w-14 " src="{{asset('assets/images/logo ph.jpg')}}" alt="" srcset="">
+                            <img class="w-14 " src="{{asset('storage').'/images/logo ph.jpg'}}" alt="imagen logo" srcset="">
                             </a>
                         </h1>
                     </div>

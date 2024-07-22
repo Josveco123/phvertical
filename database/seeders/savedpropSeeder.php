@@ -30,12 +30,11 @@ class savedpropSeeder extends Seeder
             'price'=> '245,000,000',
            ]);
            SavedProp::create([
-            'prop_id'=> '6',
+            'prop_id'=> '5',
             'user_id'=> '1',
-            'title'=> 'VENECIA ENTRADA FLORENCIA',
-            'image'=> 'hero_bg_2.jpg',
-            'location'=> 'Avenida las acacias Norte\n',
-            'price'=> '1,000,000,000',
-           ]);
+            'title'=> 'VEREDA SAN MIGUEL 1',
+            'image'=> 'hero_bg_5.jpg',
+            'location'=> 'Vereda san miguel K2',
+            'price'=> '20,000,000',           ]);
     }
 }

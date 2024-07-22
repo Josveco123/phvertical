@@ -3,13 +3,13 @@
 @section('content')
             <div class="slide-one-item home-slider owl-carousel">
               @foreach ($props as $prop)
-                <div class="site-blocks-cover overlay" style="background-image: url({{ asset('public/assets/images/'.$prop->image.'') }});" data-aos="fade">
+                <div class="site-blocks-cover overlay" style="background-image: url({{ asset('storage/images/'.$prop->image) }});" data-aos="fade">
                   <div class="container">
                     <div class="row align-items-center justify-content-center text-center">
                       <div class="col-md-10">
-                        @if($prop->type == "Buy")
+                        @if($prop->type == "Comprar")
                           <span class="d-inline-block bg-danger text-white px-3 mb-3 property-offer-type rounded">{{ $prop->type }}</span>
-                        @elseif($prop->type == "Rent")
+                        @elseif($prop->type == "Rentar")
                           <span class="d-inline-block bg-success text-white px-3 mb-3 property-offer-type rounded">{{ $prop->type }}</span>
                         @else
                           <span class="d-inline-block bg-warning text-white px-3 mb-3 property-offer-type rounded">{{ $prop->type }}</span>
@@ -111,7 +111,7 @@
                           <div class="offer-type-wrap">
                             <span class="offer-type bg-success">{{ $prop->type }}</span>
                           </div>
-                          <img src="{{ asset('public/assets/images/'.$prop->image .'') }}" alt="Image" class="img-fluid">
+                          <img src="{{ asset('storage').'/images/'.$prop->image }}" alt="Image prop 1" class="img-fluid">
                         </a>
                         <div class="p-4 property-body">
                           <h2 class="property-title"><a class="text-decoration-none" href="{{ route('single.prop', $prop->id) }}">{{ $prop->title }}</a></h2>
@@ -201,7 +201,7 @@
                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                       <div class="team-member">
 
-                        <img src="{{ asset('assets/images/person_1.jpg') }}" alt="Image" class="img-fluid rounded mb-4">
+                        <img src="{{ asset('storage/images/person_1.jpg') }}" alt="Image" class="img-fluid rounded mb-4">
 
                         <div class="text">
 
@@ -221,7 +221,7 @@
                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                       <div class="team-member">
 
-                        <img src="{{ asset('assets/images/person_2.jpg') }}" alt="Image" class="img-fluid rounded mb-4">
+                        <img src="{{ asset('storage/images/person_2.jpg') }}" alt="Image" class="img-fluid rounded mb-4">
 
                         <div class="text">
 
@@ -241,7 +241,7 @@
                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                       <div class="team-member">
 
-                        <img src="{{ asset('assets/images/person_3.jpg') }}" alt="Image" class="img-fluid rounded mb-4">
+                        <img src="{{ asset('storage/images/person_3.jpg') }}" alt="Image" class="img-fluid rounded mb-4">
 
                         <div class="text">
 
