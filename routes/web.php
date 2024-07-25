@@ -62,7 +62,6 @@ Route::group(['prefix' => 'admin',], function () {
 
     Route::get('/login', [AdminsController::class, 'viewLogin'])->name('view.login')->middleware('checkforauth');
     Route::post('/login', [AdminsController::class, 'checkLogin'])->name('check.login');
-
     Route::get('/index', [AdminsController::class, 'index'])->name('admins.dashboard');
 
 
@@ -92,9 +91,12 @@ Route::group(['prefix' => 'admin',], function () {
 
 
 
-    ///props
+    //props
     Route::get('/all-props', [AdminsController::class, 'allProps'])->name('props.all');
 
+      //gallery
+    Route::get('/all-gallery', [AdminsController::class, 'allGallery'])->name('gallery.all');
+    Route::get('/delete-gallery/{id}', [AdminsController::class, 'galleryDelete'])->name('gallery.delete');
 
     //create props
     Route::get('/create-props', [AdminsController::class, 'createProps'])->name('props.create');

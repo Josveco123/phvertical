@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="site-blocks-cover inner-page-cover overlay"
-        style="background-image: url({{ asset('storage').'/images/hero_bg_2.jpg' }});" data-aos="fade"
+        style="background-image: url({{ asset('storage/images/hero_bg_2.jpg') }});" data-aos="fade"
         data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row align-items-center justify-content-center text-center">
@@ -46,8 +46,7 @@
                         <div class="row form-group">
                             <div class="col-md-12">
                                 <label class="font-weight-bold" for="Mensaje">Mensaje</label>
-                                <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="form-control"
-                                    placeholder="Diganos..."></textarea>
+                                <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="form-control" placeholder="Diganos..."></textarea>
                             </div>
                         </div>
 
@@ -85,81 +84,108 @@
                 <div class="col-md-7">
                     <div class="site-section-title text-center">
                         <h2>Nuestros Agentes</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magnam officiis ipsa eum pariatur
-                            labore fugit amet eaque iure vitae, repellendus laborum in modi reiciendis quis! Optio minima
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magnam officiis ipsa eum
+                            pariatur
+                            labore fugit amet eaque iure vitae, repellendus laborum in modi reiciendis quis! Optio
+                            minima
                             quibusdam, laboriosam.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-                    <div class="team-member">
-
-                        <img src="{{ asset('storage').'/images/person_1.jpg' }}" alt="Image" class="img-fluid rounded mb-4">
-
+                    <div class="flex flex-col justify-center align-items-center  team-member mr-5">
+                        <div
+                            class="flex justify-center align-items-center p-1  border-2 border-gray-200 bg-gray-150 rounded-full w-3/5 h-64">
+                            <img src="{{ asset('storage/images/person_1.jpg') }}" alt="Image"
+                                class="img-fluid rounded-full w-11/12">
+                        </div>
                         <div class="text">
 
-                            <h2 class="mb-2 font-weight-light text-black h4">Luis Tobon</h2>
-                            <span class="d-block mb-3 text-white-opacity-05">Agente de bienes raíces</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere
-                                blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate, vitae
-                                minus obcaecati provident beatae!</p>
-                            <p>
-                                <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
-                                <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
-                                <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+                            <h2
+                                class="flex flex-col justify-center align-items-center mb-2 font-weight-light text-black h4 mt-2">
+                                Carlos Beltran</h2>
+                            <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
+                                bienes Raíces</span>
+                            <p class="flex flex-row text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                                Modi dolorem totam non quis facere
+                                blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate,
+                                vitae
+                                minus obcaecati provident beatae!
                             </p>
+                            <div class="w-full flex justify-end items-center text-right text-2xl">
+                                <a href="#" class="mr-3 text-black p-2"><span class="icon-facebook"></span></a>
+                                <a href="#" class="mr-3 text-black p-2"><span class="icon-twitter"></span></a>
+                                <a href="#" class="mr-3 text-black p-2"><span class="icon-linkedin"></span></a>
+                            </div>
                         </div>
 
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-                    <div class="team-member">
-
-                        <img src="{{ asset('storage').'/images/person_2.jpg' }}" alt="Image" class="img-fluid rounded mb-4">
-
+                    <div class="flex flex-col justify-center align-items-center  team-member mr-5">
+                        <div
+                            class="flex justify-center align-items-center p-1  border-2 border-gray-200 bg-gray-150 rounded-full w-3/5 h-64">
+                            <img src="{{ asset('storage/images/person_2.jpg') }}" alt="Image"
+                                class="img-fluid rounded-full w-11/12">
+                        </div>
                         <div class="text">
 
-                            <h2 class="mb-2 font-weight-light text-black h4">Carlos Salcedo</h2>
-                            <span class="d-block mb-3 text-white-opacity-05">Agente de bienes raíces</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cumque vitae voluptates
-                                culpa earum similique corrupti itaque veniam doloribus amet perspiciatis recusandae sequi
-                                nihil tenetur ad, modi quos id magni!</p>
-                            <p>
-                                <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
-                                <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
-                                <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+                            <h2
+                                class="flex flex-col justify-center align-items-center mb-2 font-weight-light text-black h4 mt-2">
+                                Carlos Beltran</h2>
+                            <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
+                                bienes Raíces</span>
+                            <p class="flex flex-row text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                                Modi dolorem totam non quis facere
+                                blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate,
+                                vitae
+                                minus obcaecati provident beatae!
                             </p>
+                            <div class="w-full flex justify-end items-center text-right text-2xl">
+                                <a href="#" class="mr-3 text-black p-2"><span class="icon-facebook"></span></a>
+                                <a href="#" class="mr-3 text-black p-2"><span class="icon-twitter"></span></a>
+                                <a href="#" class="mr-3 text-black p-2"><span class="icon-linkedin"></span></a>
+                            </div>
                         </div>
 
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-                    <div class="team-member">
+                    <div class="flex flex-col justify-center align-items-center  team-member mr-5">
 
-                        <img src="{{ asset('storage').'/images/person_3.jpg' }}" alt="Image"
-                            class="img-fluid rounded mb-4">
-
+                        <div
+                            class="flex justify-center align-items-center p-1  border-2 border-gray-200 bg-gray-150 rounded-full w-3/5 h-64">
+                            <img src="{{ asset('storage/images/person_3.jpg') }}" alt="Image"
+                                class="img-fluid rounded-full w-11/12">
+                        </div>
                         <div class="text">
 
-                            <h2 class="mb-2 font-weight-light text-black h4">Pedro Marti</h2>
-                            <span class="d-block mb-3 text-white-opacity-05">Agente de bienes raíces</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores illo iusto, inventore, iure
-                                dolorum officiis modi repellat nobis, praesentium perspiciatis, explicabo. Atque cupiditate,
-                                voluptates pariatur odit officia libero veniam quo.</p>
-                            <p>
-                                <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
-                                <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
-                                <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+                            <h2
+                                class="flex flex-col justify-center align-items-center mb-2 font-weight-light text-black h4 mt-2">
+                                Carlos Beltran</h2>
+                            <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
+                                bienes Raíces</span>
+                            <p class="flex flex-row text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                                Modi dolorem totam non quis facere
+                                blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate,
+                                vitae
+                                minus obcaecati provident beatae!
                             </p>
+                            <div class="w-full flex justify-end items-center text-right text-2xl">
+                                <a href="#" class="mr-3 text-black p-2"><span class="icon-facebook"></span></a>
+                                <a href="#" class="mr-3 text-black p-2"><span class="icon-twitter"></span></a>
+                                <a href="#" class="mr-3 text-black p-2"><span class="icon-linkedin"></span></a>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-
-
 
             </div>
         </div>

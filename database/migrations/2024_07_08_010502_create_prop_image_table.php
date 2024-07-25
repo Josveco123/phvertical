@@ -13,9 +13,12 @@ return new class extends Migration
     {
         Schema::create('prop_image', function (Blueprint $table) {
             $table->id();
-            $table->integer('prop_id')->nullable(false);
-            $table->string('image',200)->nullable(false); //fotos de la vicienda
+            $table->unsignedBigInteger('prop_id'); // Cambia a unsignedBigInteger para que coincida con la clave primaria
+            $table->string('image',200)->nullable(false); // fotos de la vivienda
             $table->timestamps();
+
+            // Definir la clave foránea
+            $table->foreign('prop_id')->references('id')->on('props')->onDelete('cascade');
         });
     }
 

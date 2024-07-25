@@ -44,15 +44,15 @@
 
                     <select name="home_type" class="form-control form-select" aria-label="Default select example">
                         <option selected>Seleccione tipos</option>
-                        <option value="Condo">Condominio</option>
-                        <option value="Commercial">Comercial</option>
+                        <option value="Condominio">Condominio</option>
+                        <option value="Comercial">Comercial</option>
                         <option value="Terrenos">Terrenos</option>
                     </select>
                     <select name="type" class="form-control mt-3 mb-4 form-select" aria-label="Default select example">
                         <option selected>Seleccione Tipos</option>
                         <option value="Comprar">Comprar</option>
                         <option value="Rentar">Rentar</option>
-                        <option value="Alquiler">En Alquiler</option>
+                        <option value="Alquilar">Alquiler</option>
                     </select>
                     <select name="city" class="form-control mt-3 mb-4 form-select" aria-label="Default select example">
                       <option selected>Select City</option>

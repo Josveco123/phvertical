@@ -4,6 +4,7 @@ namespace App\Models\Prop;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Prop\PropImage;
 
 class Property extends Model
 {
@@ -34,4 +35,12 @@ class Property extends Model
     ];
 
     public $timestamps = true;
+
+    // Definir la relación uno a muchos con PropImage
+    public function images()
+    {
+        return $this->hasMany(PropImage::class, 'prop_id');
+    }
+
+
 }

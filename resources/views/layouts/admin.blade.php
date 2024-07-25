@@ -15,7 +15,10 @@
 <div id="wrapper">
     <nav class="navbar header-top fixed-top navbar-expand-lg  navbar-dark bg-dark">
       <div class="container">
-      <a class="navbar-brand" href="#"><img src="{{asset('assets/images/phvertical.png')}}" alt="" srcset=""></a>
+      <a class="navbar-brandclass flex flex-row w-14 h-auto text-decoration-none text-white h2 mb-0"
+          href="#"><img src="{{ asset('storage/images/logo ph.jpg') }}" alt="imagen logo"
+          srcset="" style="width: 25px;">
+     </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,6 +41,9 @@
             <li class="nav-item">
               <a class="nav-link" href="{{ route('props.all') }}" style="margin-left: 20px;">Propiedades</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('gallery.all') }}" style="margin-left: 20px;">Gallery</a>
+              </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ route('requests.all') }}" style="margin-left: 20px;">Peticiones</a>
             </li>

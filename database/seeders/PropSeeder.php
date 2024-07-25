@@ -26,7 +26,7 @@ class PropSeeder extends Seeder
             'more_info' => 'Monotonectally revolutionize open-source core competencies and market-driven resources. Dramatically myocardinate client-centered human capital and highly efficient total linkage. Efficiently re-engineer just in time markets and user friendly \r\n\r\nMonotonectally revolutionize open-source core competencies and market-driven resources. Dramatically myocardinate client-centered human capital and highly efficient total linkage. Efficiently re-engineer just in time markets and user friendly',
             'location' => ' Calle pricipal Casa 1010\n',
             'agent_name' => 'Alcira Perez',
-            'type' => 'Comprar',
+            'type' => 'Alquilar',
             'city' => 'Sincelejo',
         ]);
         Property::create([

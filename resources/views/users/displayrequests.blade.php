@@ -4,7 +4,7 @@
 @section('content')
 
     <div class="site-blocks-cover inner-page-cover overlay"
-        style="background-image: url({{ asset('storage').'/images/hero_bg_2.jpg' }});" data-aos="fade">
+        style="background-image: url({{ asset('storage/images/hero_bg_2.jpg') }});" data-aos="fade">
         <div class="container">
             <div class="row align-items-center justify-content-center text-center">
                 <div class="col-md-10">

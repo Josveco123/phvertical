@@ -89,13 +89,6 @@ class PropertiesController extends Controller
 
    public function saveProps(Request $request) {
 
-
-        // Request()->validate([
-        //     "name" => "required|max:40",
-        //     "email" => "required|max:70",
-        //     "phone" => "required|max:50",
-        // ]);
-
     $saveProp = SavedProp::create([
 
             "prop_id" => $request->prop_id,
@@ -122,7 +115,6 @@ class PropertiesController extends Controller
         $propsBuy = Property::select()->where('type', $type)
          ->get();
 
-
         return view('props.propsbuy', compact('propsBuy'));
     }
 
@@ -134,14 +126,11 @@ class PropertiesController extends Controller
         $propsRent = Property::select()->where('type', $type)
          ->get();
 
-
         return view('props.propsrent', compact('propsRent'));
     }
 
 
-
     public function displayByHomeType($hometype) {
-
 
 
         $propsByHomeType = Property::select()->where('home_type', $hometype)
