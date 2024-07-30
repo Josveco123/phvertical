@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-12 col-lg-8 mb-5">
+                <div class="col-md-12 col-lg-7 mb-5">
 
 
 
@@ -44,9 +44,9 @@
 
 
                         <div class="row form-group">
-                            <div class="col-md-12">
+                            <div class="col-md-12 ">
                                 <label class="font-weight-bold" for="Mensaje">Mensaje</label>
-                                <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="form-control" placeholder="Diganos..."></textarea>
+                                <textarea name="mensaje" id="mensaje" cols="30" rows="8" class="form-control h-20" placeholder="Diganos..."></textarea>
                             </div>
                         </div>
 
@@ -59,17 +59,20 @@
                     </form>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-5">
                     <div class="p-4 mb-3 bg-white">
-                        <h3 class="h6 text-black mb-3 text-uppercase">Datos de Contacto</h3>
+                        <h3 class="h6 text-2xl text-black mb-3 text-uppercase font-bold">Phvertical</h3>
+                        <p class="mb-4 flex flex-row text-justify">Tu inmobiliaria de confianza, contáctanos y descubre todas las opciones que tenemos para ti.
+                            Estamos abiertos todos los días de 8 a.m. a 6 p.m. </p>
+                        <h3 class="h6 text-black mb-3 font-bold">Datos de Contacto</h3>
                         <p class="mb-0 font-weight-bold">Direccion</p>
-                        <p class="mb-4">203 Avenida las Peñitas. Sincelejo, Sucre, Colombia</p>
+                        <p class="mb-4">Calle 38 No. 4A 184 L22 Mz C. Sincelejo, Sucre, Colombia</p>
 
                         <p class="mb-0 font-weight-bold">Telefono</p>
                         <p class="mb-4"><a href="#">+5 232 3232 323</a></p>
 
                         <p class="mb-0 font-weight-bold">Direccion Email</p>
-                        <p class="mb-0"><a href="#">phvertical@domain.com</a></p>
+                        <p class="mb-0"><a href="#">phvertical79@gmail.com</a></p>
 
                     </div>
 

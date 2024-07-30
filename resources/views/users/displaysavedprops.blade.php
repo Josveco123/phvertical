@@ -33,20 +33,20 @@
                     @foreach ($allSavedProps as $relatedProp)
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="property-entry h-100">
-                                <a href="{{ route('single.prop', $relatedProp->id) }}" class="property-thumbnail ">
+                                <a href="{{ route('single.prop', $relatedProp->prop_id) }}" class="property-thumbnail ">
                                     <img src="{{ asset('storage/images/'.$relatedProp->image) }}" alt="Image 1"
                                         class="img-fluid h-80">
                                 </a>
                                 <div class="p-4 property-body">
                                     <h2 class="property-title"><a
-                                            href="{{ route('single.prop', $relatedProp->id) }}">{{ $relatedProp->title }}</a>
+                                            href="{{ route('single.prop', $relatedProp->prop_id) }}">{{ $relatedProp->title }}</a>
                                     </h2>
                                     <span class="property-location d-block mb-3"><span
                                             class="property-icon icon-room"></span> {{ $relatedProp->location }}</span>
                                     <strong
                                         class="property-price text-primary mb-3 d-block text-success">${{ $relatedProp->price }}</strong>
                                 </div>
-                                <div class="mb-4 mr-10 text-right h-full"> <!-- Utilizamos text-right para alinear el contenido a la derecha -->
+                                <div class="mb-4 mr-10 text-right h-full">
                                     <form action="{{ route('sacar.props', $relatedProp->id) }}" method="POST" style="display: inline;">
                                         @csrf
                                         @method('DELETE')

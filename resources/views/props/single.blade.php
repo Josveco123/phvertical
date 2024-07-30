@@ -105,7 +105,7 @@
                         <h3 class="h4 text-black widget-title ">Agente de Contacto</h3>
                         @if (isset(Auth::user()->id))
                             @if ($validateFormCount > 0)
-                                <p class="alert alert-success">inicie sesión para enviar una solicitud a esta propiedad</p>
+                                <p class="alert alert-success">Ya envio una solicitud de esta propiedad y la tiene registrada</p>
                             @else
                                 <form method="POST" action="{{ route('insert.request', $singleProp->id) }}"
                                     class="form-contact-agent">
@@ -151,12 +151,12 @@
 
                                     <div class="form-group">
                                         <input type="submit" name="submit" id="phone" class="btn btn-primary"
-                                            value="Send Request">
+                                            value="Enviar mensaje">
                                     </div>
                                 </form>
                             @endif
                         @else
-                            <p class="alert alert-success">inicie sesión para enviar una solicitud a esta propiedad</p>
+                            <p class="alert alert-success">Inicie sesión para enviar una solicitud a esta propiedad</p>
                         @endif
                     </div>
 
@@ -166,7 +166,7 @@
                         @if (isset(Auth::user()->id))
                             @if ($validateSavingPropsCount > 0)
                                 <input type="submit" name="submit" id="phone" class="btn btn-primary" disabled
-                                    value="you saved this property">
+                                    value="Ya la tiene registrada">
                             @else
                                 <form method="POST" action="{{ route('save.prop', $singleProp->id) }}"
                                     class="form-contact-agent">
@@ -197,12 +197,12 @@
 
                                     <div class="form-group">
                                         <input type="submit" name="submit" id="phone" class="btn btn-primary"
-                                            value="Save property">
+                                            value="Guardar propiedad">
                                     </div>
                                 </form>
                             @endif
                         @else
-                            <p class="alert alert-success">inicie sesión para enviar un guardar esta propiedad</p>
+                            <p class="alert alert-success">inicie sesión para enviar o seleccionar esta propiedad</p>
                         @endif
 
                     </div>

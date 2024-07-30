@@ -18,10 +18,6 @@ use Illuminate\Support\Facades\Storage;
 
 class AdminsController extends Controller
 {
-
-
-
-
     public function viewLogin()
     {
 

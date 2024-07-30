@@ -22,6 +22,7 @@ class PropertiesController extends Controller
 
     public function single($id) {
 
+
         $singleProp = Property::find($id);
 
         $propImages = PropImage::where('prop_id', $id)->get();

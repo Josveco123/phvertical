@@ -1,5 +1,6 @@
 <?php
 
+
 use App\Http\Middleware\Authenticate;
 use App\Http\Middleware\CheckForAuth;
 use App\Http\Middleware\RedirectIfAuthenticated;
@@ -15,6 +16,7 @@ use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Foundation\Http\Middleware\HandlePrecognitiveRequests;
 use Illuminate\Routing\Middleware\ThrottleRequests;
 use Illuminate\Auth\Middleware\EnsureEmailIsVerified;
+
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(

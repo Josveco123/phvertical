@@ -26,7 +26,7 @@ class RequestSeeder extends Seeder
             'agent_name'=> 'Alfonzo pacheco',
             'user_id'=> '1',
             'name'=> 'Jairo',
-            'email'=> 'jairo@gmail.com',
+            'email'=> 'alfonso@gmail.com',
             'phone'=> '232323232',
            ]);
     }
