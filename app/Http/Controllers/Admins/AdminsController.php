@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Requests\StorePropertyRequest;
 
 class AdminsController extends Controller
 {
@@ -193,16 +194,13 @@ class AdminsController extends Controller
 
 
 
-
-    public function storeProps(Request $request)
+    public function storeProps(StorePropertyRequest $request)
     {
 
         $myimage = 'Propiedad_' . time() . '.' . $request->image->extension();
-        // $request->image->move(public_path('images'), $myimage);
-        $request->image->storeAs('images', $myimage);
+        $request->image->storeAs('public/images', $myimage);
 
         $storeProps = Property::create([
-
             'title' => $request->title,
             'price' => $request->price,
             'image' => $myimage,
@@ -216,10 +214,7 @@ class AdminsController extends Controller
             'type' => $request->type,
             'city' => $request->city,
             'more_info' => $request->more_info,
-            'type' => $request->type,
-
             'agent_name' => $request->agent_name,
-
         ]);
 
 
@@ -248,7 +243,7 @@ class AdminsController extends Controller
         if ($request->hasfile('image')) {
             foreach ($request->file('image') as $file) {
 
-                $path = 'images_gallery';
+                $path = 'public/images_gallery';
                 $name = time() . rand(1, 50) . '.' . $file->extension();
                 //$file->move(public_path($path), $name);
                 $file->storeAs($path, $name);
@@ -276,25 +271,21 @@ class AdminsController extends Controller
     {
 
         $deleteProp = Property::find($id);
+        $deleteGallery = PropImage::where("prop_id", $id)->get();
 
         if ($deleteProp) {
-            $imagePath = 'images/' . $deleteProp->image;
+            $imagePath = 'public/images/' . $deleteProp->image;
 
             if (Storage::exists($imagePath)) {
                 Storage::delete($imagePath);
             } else {
                 //dd('File does not exists.');
             }
-
             $deleteProp->delete();
-
-
-
-            $deleteGallery = PropImage::where("prop_id", $id)->get();
 
             foreach ($deleteGallery as $delete) {
 
-                $imagePath = 'images_gallery/' . $delete->image;
+                $imagePath = 'public/images_gallery/' . $delete->image;
 
                 if (Storage::exists($imagePath)) {
                     Storage::delete($imagePath);
@@ -340,7 +331,7 @@ class AdminsController extends Controller
         try {
             $galleryDelete = PropImage::find($id);
             if ($galleryDelete) {
-                $imagePath = 'images_gallery/' . $galleryDelete->image;
+                $imagePath = 'public/images_gallery/' . $galleryDelete->image;
 
                 if (Storage::exists($imagePath)) {
                     Storage::delete($imagePath);
@@ -353,6 +344,7 @@ class AdminsController extends Controller
 
                 return redirect()->route('gallery.all')->with('success', 'Elemento eliminado correctamente');
             }
+
             return redirect()->route('gallery.all')->with('error', 'No se encontró la propiedad.');
         } catch (Exception $e) {
             Log::error('Error deleting gallery image: ' . $e->getMessage());
