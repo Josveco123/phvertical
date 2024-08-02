@@ -53,7 +53,7 @@
                         <h1 class="mb-0">
                             <a href="{{ url('/') }}"
                                 class="flex flex-row w-32 h-auto text-decoration-none text-white h2 mb-0">
-                                <img class="w-14 " src="{{ asset('storage/images/logo ph.jpg') }}" alt="imagen logo"
+                                <img class="w-14 " src="{{ asset('storage/images/logophv.jpg') }}" alt="imagen logo"
                                     srcset="">
                             </a>
                         </h1>
@@ -132,30 +132,34 @@
 
         <!-- Offcanvas HTML  aqui comienza el menu tres rallas-->
 
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        <div class="offcanvas offcanvas-start bg-gray-500 text-white" tabindex="-1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menú</h5>
+            <div class="offcanvas-header w-full">
+
+                <h5 class="w-full offcanvas-title text-2xl text-center items-center" id="offcanvasExampleLabel">Menú</h5>
+
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
             </div>
-            <div class="offcanvas-body">
+
+            <div class="offcanvas-body flex flex-col justify-start items-center">
                 <ul class="list-unstyled">
-                    <li><a href="{{ url('/') }}">Inicio</a></li>
-                    <li><a href="{{ route('buy.prop') }}">Comprar</a></li>
-                    <li><a href="{{ route('rent.prop') }}">Rentar</a></li>
-                    <li class="has-children">
-                        <a href="#">Propiedades</a>
-                        <ul class="dropdown arrow-top">
+                    <li class="mb-2"><a href="{{ url('/') }}">Inicio</a></li>
+                    <li class="mb-2"><a href="{{ route('buy.prop') }}">Comprar</a></li>
+                    <li class="mb-2"><a href="{{ route('rent.prop') }}">Rentar</a></li>
+                    <li class="has-children mb-2 hidden lg-flex">
+                        <a href="#" class="mb-2">Propiedades</a>
+                        <ul class="dropdown arrow-top ">
                             @foreach ($homeTypes as $hometype)
-                                <li><a
+                                <li class="mb-2"><a
                                         href="{{ route('display.prop.hometype', $hometype->hometypes) }}">{{ $hometype->hometypes }}</a>
                                 </li>
                             @endforeach
                         </ul>
-                    </li>
+                    </li class="mb-2">
 
-                    <li><a href="{{ route('about') }}">Nosotros</a></li>
-                    <li><a href="{{ route('contact') }}">Contacto</a></li>
+                    <li class="mb-2"><a href="{{ route('about') }}">Nosotros</a></li>
+                    <li class="mb-2"><a href="{{ route('contact') }}">Contacto</a></li>
                     @auth
                         @if (Auth::user()->role === 'master')
                             <li><a href="{{ route('view.login') }}" target="_blank">C.R.U.D</a></li>
@@ -163,10 +167,10 @@
                     @endauth
                     @guest
                         @if (Route::has('login'))
-                            <li><a href="{{ route('login') }}">Login</a></li>
+                            <li class="mb-2"><a href="{{ route('login') }}">Login</a></li>
                         @endif
                         @if (Route::has('register'))
-                            <li><a href="{{ route('register') }}">Register</a></li>
+                            <li class="mb-2"><a href="{{ route('register') }}">Register</a></li>
                         @endif
                     @else
                         <li class="nav-item dropdown">

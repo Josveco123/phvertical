@@ -40,7 +40,7 @@
                 @foreach ($allGallery as $gallery)
                     <tr>
                         <th scope="row">{{ $gallery->id }}</th>
-                        <td>${{ $gallery->prop_id }}</td>
+                        <td>{{ $gallery->prop_id }}</td>
                         <td>{{ $gallery->property->title }}</td>
                         <td>${{ $gallery->image }}</td>
                         <td>
