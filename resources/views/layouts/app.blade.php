@@ -112,10 +112,11 @@
                                                 solicitadas</a>
                                             <a class="dropdown-item" href="{{ route('all.saved.props') }}">Todas las
                                                 posibles</a>
-                                            <a class="dropdown-item" href="{{ route('logout') }}"
-                                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                                {{ __('Logout') }}
-                                            </a>
+                                                <a class="dropdown-item" href="{{ route('form.cambio.password') }}">Cambiar su contraseña</a>
+                                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                                    Cerrar sesion
+                                                </a>
                                             <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                                 class="d-none">
                                                 @csrf
@@ -181,9 +182,10 @@
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('all.requests') }}">Todas las solicitadas</a>
                                 <a class="dropdown-item" href="{{ route('all.saved.props') }}">Todas las posibles</a>
+                                <a class="dropdown-item" href="{{ route('form.cambio.password') }}">Cambiar su contraseña</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
+                                    Cerrar sesion
                                 </a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf

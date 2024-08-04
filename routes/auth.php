@@ -9,6 +9,7 @@ use App\Http\Controllers\Auth\PasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
+use App\Http\Controllers\Auth\ChangePasswordController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function () {
@@ -59,3 +60,6 @@ Route::middleware('auth')->group(function () {
 
      //Route::post('logout', function () {dd('Ruta de logout alcanzada');})->name('logout');
 });
+
+Route::get('change-password', [ChangePasswordController::class, 'index'])->middleware('auth')->name('form.cambio.password');
+Route::post('change-password', [ChangePasswordController::class, 'store'])->name('change.password');
