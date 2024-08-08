@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="card-body text-sm lg:text-md">
-                        
+
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
                             <!---
@@ -98,11 +98,16 @@
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password"  style="height:30px;">
                                 </div>
                             </div>
-                            <div class="row mb-0">
-                                <div class="col-md-6 offset-md-4">
+                            <div class="w-full mb-0 flex flex-row justify-center items-center space-x-20">
+                                <div class="w-auto ">
                                     <button type="submit" class="btn btn-primary">
                                         Registrarse
                                     </button>
+                                </div>
+                                <div class="w-auto ">
+                                    <a href="{{route('home')}}" class="btn btn-primary">
+                                        Salir
+                                    </a>
                                 </div>
                             </div>
                         </form>

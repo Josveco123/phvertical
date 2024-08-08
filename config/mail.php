@@ -40,9 +40,9 @@ return [
         'smtp' => [
             'transport' => 'smtp',
             'url' => env('MAIL_URL'),
-            'host' => env('MAIL_HOST', '127.0.0.1'),
-            'port' => env('MAIL_PORT', 2525),
-            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+            'host' => env('MAIL_HOST', 'smtp.hostinger.com'),
+            'port' => env('MAIL_PORT', 465),
+            'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
@@ -109,7 +109,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'phvertical@laboratoriodelcaribe.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 

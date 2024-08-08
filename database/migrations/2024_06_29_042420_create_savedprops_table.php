@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('image', 200)->nullable(false);
             $table->string('location', 200)->nullable(false);
             $table->string('price', 200)->nullable(false);
+            $table->string('type',200)->nullable(false); //tipo
             $table->timestamps();
         });
     }

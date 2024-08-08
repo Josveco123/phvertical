@@ -17,7 +17,8 @@ class SavedProp extends Model
         'title',
         'image',
         'location',
-        'price'
+        'price',
+        'type',
     ];
 
     public $timestamps = true;

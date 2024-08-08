@@ -19,8 +19,11 @@
                                     class="d-inline-block bg-warning text-white px-3 mb-3 property-offer-type rounded">{{ $prop->type }}</span>
                             @endif
                             <h1 class="mb-2">{{ $prop->title }}</h1>
-                            <p class="mb-5"><strong class="h2 text-success font-weight-bold">${{ $prop->price }}</strong>
-                            </p>
+                            @if ($prop->type == 'Alquilar' || $prop->type == 'Rentar')
+                                <p class="mb-5"><strong class="h2 text-success font-weight-bold">${{ $prop->price }}</strong></p>
+                            @else
+                                <p class="mb-5"><strong class="h2 text-success font-weight-bold">-----</strong></p>
+                            @endif
                             <p><a href="{{ route('single.prop', $prop->id) }}"
                                     class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">
                                     Ver Detalles
@@ -132,8 +135,12 @@
                                         href="{{ route('single.prop', $prop->id) }}">{{ $prop->title }}</a></h2>
                                 <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span>
                                     {{ $prop->location }}</span>
-                                <strong
-                                    class="property-price text-primary mb-3 d-block text-success">${{ $prop->price }}</strong>
+
+                                @if ($prop->type == 'Alquilar' || $prop->type == 'Rentar')
+                                    <strong class="property-price text-primary mb-3 d-block text-success">{{ $prop->price }}</strong>
+                                @else
+                                    <strong class="property-price text-primary mb-3 d-block text-success">-----</strong>
+                                @endif
                                 <ul class="property-specs-wrap mb-3 mb-lg-0">
                                     <li>
                                         <span class="property-specs">Cuartos</span>

@@ -22,9 +22,7 @@
                     href="#"><img src="{{ asset('storage/images/logophv.jpg') }}" alt="imagen logo" srcset=""
                         style="width: 25px;">
                 </a>
-                <a class="border rounded-full p-2 navbar-brandclass flex flex-row justify-center items-center text-center w-14 h-auto text-decoration-none text-white text-md mb-0 hover:bg-gray-600"
-                href="{{ route('home') }}">Salir
-            </a>
+
             </div>
 
         </nav>

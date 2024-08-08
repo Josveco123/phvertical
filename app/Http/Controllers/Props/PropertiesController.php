@@ -54,7 +54,6 @@ class PropertiesController extends Controller
 
         } else {
             return view('props.single', compact('singleProp', 'propImages', 'relatedProps'));
-
         }
 
     }
@@ -98,7 +97,7 @@ class PropertiesController extends Controller
             "image" => $request->image,
             "location" => $request->location,
             "price" => $request->price,
-
+            "type"  => $request->type,
     ]);
 
     if($saveProp) {

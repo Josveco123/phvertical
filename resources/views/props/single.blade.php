@@ -11,7 +11,13 @@
                     <span class="d-inline-block text-white px-3 mb-3 property-offer-type rounded">Detalles de la
                         Propiedad</span>
                     <h1 class="mb-2">{{ $singleProp->title }}</h1>
-                    <p class="mb-5"><strong class="h2 text-success font-weight-bold">${{ $singleProp->price }}</strong></p>
+
+                    @if ($singleProp->type == 'Alquilar' || $singleProp->type == 'Rentar')
+                        <p class="mb-5"><strong class="h2 text-success font-weight-bold">{{ $singleProp->price }}</strong></p>
+                    @else
+                        <p class="mb-5"><strong class="h2 text-success font-weight-bold">-----</strong></p>
+                    @endif
+
                 </div>
             </div>
         </div>
@@ -59,7 +65,13 @@
                         class="flex flex-col w-full bg-white  border-bottom border-left border-right mt-2 border-2 border-gray-200">
                         <div class="flex flex-row justify-between w-full">
                             <div class="flex flex-row w-full items-center justify-center col-md-6 mt-4">
-                                <strong class="text-success h1 mb-3">${{ $singleProp->price }}</strong>
+                                @if ($singleProp->type == 'Alquilar' || $singleProp->type == 'Rentar')
+                                    <strong class="text-success h1 mb-3">{{ $singleProp->price }}</strong>
+                                @else
+                                    <strong class="text-success h1 mb-3">---</strong>
+                                @endif
+
+
                             </div>
                             <div class="w-full flex flex-row col-md-5 mt-6 justify-end mr-20">
                                 <ul class="property-specs-wrap mb-3 mb-lg-0  float-lg-right space-x-4">
@@ -187,12 +199,17 @@
 
                                     <div class="form-group">
                                         <input type="hidden" value="{{ $singleProp->location }}" name="location"
-                                            id="email" class="form-control">
+                                            id="name" class="form-control">
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="hidden" value="{{ $singleProp->price }}" name="price"
-                                            id="phone" class="form-control">
+                                       <input type="hidden" value="{{ $singleProp->price }}" name="price"
+                                          id="name" class="form-control">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="hidden" value="{{ $singleProp->type }}" name="type"
+                                            id="name" class="form-control">
                                     </div>
 
                                     <div class="form-group">
@@ -272,8 +289,12 @@
                                     </h2>
                                     <span class="property-location d-block mb-3"><span
                                             class="property-icon icon-room"></span> {{ $relatedProp->location }}</span>
-                                    <strong
-                                        class="property-price text-primary mb-3 d-block text-success">${{ $relatedProp->price }}</strong>
+                                        @if ($relatedProp->type == 'Alquilar' || $relatedProp->type == 'Rentar')
+                                            <strong class="property-price text-primary mb-3 d-block text-success">{{ $relatedProp->price }}</strong>
+                                        @else
+                                            <strong class="property-price text-primary mb-3 d-block text-success">----</strong>
+                                        @endif
+
                                     <ul class="property-specs-wrap mb-3 mb-lg-0">
                                         <li>
                                             <span class="property-specs">Cuartos</span>

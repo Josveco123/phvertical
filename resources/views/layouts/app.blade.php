@@ -112,8 +112,9 @@
                                                 solicitadas</a>
                                             <a class="dropdown-item" href="{{ route('all.saved.props') }}">Todas las
                                                 posibles</a>
-                                                <a class="dropdown-item" href="{{ route('form.cambio.password') }}">Cambiar su contraseña</a>
-                                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                                <span class="dropdown-item">-----------</span>
+                                                <a class="dropdown-item text-gray-600" href="{{ route('form.cambio.password') }}">Cambiar su contraseña</a>
+                                                <a class="dropdown-item  text-gray-600" href="{{ route('logout') }}"
                                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                                     Cerrar sesion
                                                 </a>
@@ -182,8 +183,11 @@
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('all.requests') }}">Todas las solicitadas</a>
                                 <a class="dropdown-item" href="{{ route('all.saved.props') }}">Todas las posibles</a>
-                                <a class="dropdown-item" href="{{ route('form.cambio.password') }}">Cambiar su contraseña</a>
-                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                <span class="dropdown-item">-----------</span>
+                                <a class="dropdown-item text-gray-600" href="{{ route('form.cambio.password') }}">
+                                    Cambiar su contraseña
+                                </a>
+                                <a class="dropdown-item  text-gray-600" href="{{ route('logout') }}"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     Cerrar sesion
                                 </a>

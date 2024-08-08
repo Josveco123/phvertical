@@ -14,19 +14,16 @@
             </div>
         </div>
 
-        <div class="w-full h-auto mt-14 ">
-            <div class="flex w-full h-auto justify-center items-center ">
-                <div
-                    class="w-11/12 h-[500px] flex flex-col space-y-20 md:space-y-0 space-x-10 md:flex-row justify-between items-center ">
-                    <div class="relative col-md-6 w-auto h-full ml-14">
-                        <!-- Gradiente de desvanecimiento hacia los bordes -->
-                        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0)_0%,_rgba(255,255,255,1)_100%)] pointer-events-none"></div>
-                        <!-- Imagen -->
-                        <img class="w-auto h-full object-cover rounded-lg" src="{{ asset('storage/images/abaut.jpg') }}" alt="Image">
+        <div class="w-full h-auto mt-14">
+            <div class="flex flex-row w-full justify-center items-center h-[400px]">
+                <div class="w-auto h-full  flex flex-col space-y-20 md:space-y-0 space-x-10  md:flex-row justify-between mr-10">
+                    <div class="w-full h-auto ml-14 ">
+
+                        <img class="w-full h-full object-cover rounded-lg" src="{{ asset('storage/images/abaut.jpg') }}" alt="Image">
                     </div>
 
                     <div
-                        class="h-full flex flex-col justify-center items-center col-md-5 border-gray-200 border-2 pr-14">
+                        class="h-screen flex flex-col justify-center items-center col-md-5 border-gray-100 border-2 mr-14 pl-10">
                         <div class="flex flex-row items-center w-full text-4xl font-bold text-black uppercase mt-2 ">
                             <h2 class=" w-full h-auto flex flex-row justify-center items-center">Nuestra Compañia</h2>
                         </div>
@@ -39,10 +36,12 @@
                             Sunt laudantium fugiat, mollitia voluptate? Modi blanditiis veniam nesciunt architecto odit
                             voluptatum tempore impedit magnam itaque natusIllum repudiandae ratione facere explicabo.
                             Consequatur dolor optio iusto, quos autem voluptate ea?
-                            !
+                            !    Sunt laudantium fugiat, mollitia voluptate? Modi blanditiis veniam nesciunt architecto odit
+                            voluptatum tempore impedit magnam itaque natusIllum repudiandae ratione facere explicabo.
+                            Consequatur dolor optio iusto, quos autem voluptate ea?
                         </p>
                         <p class="w-full flex flex-row justify-end items-end">
-                            <a href="#" class="btn btn-outline-primary rounded-0 py-2 px-5">Leer mas</a>
+                            <a href="#" class="btn btn-outline-secondary rounded-0 py-2 px-5">Leer mas</a>
                         </p>
                     </div>
                 </div>

@@ -41,7 +41,12 @@
                 <div class="p-4 property-body">
                     <h2 class="property-title"><a href="{{ route('single.prop', $relatedProp->id) }}">{{ $relatedProp->title }}</a></h2>
                     <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> {{ $relatedProp->location }}</span>
-                    <strong class="property-price text-primary mb-3 d-block text-success">${{ $relatedProp->price }}</strong>
+                    @if ($relatedProp->type == 'Alquilar' || $relatedProp->type == 'Rentar')
+                        <strong class="property-price text-primary mb-3 d-block text-success">{{ $relatedProp->price }}</strong>
+                @else
+                    <strong class="property-price text-primary mb-3 d-block text-success">---</strong>
+                @endif
+
                     <ul class="property-specs-wrap mb-3 mb-lg-0">
                     <li>
                         <span class="property-specs">Cuartos</span>
