@@ -14,170 +14,121 @@
             </div>
         </div>
 
-        <div class="w-full h-auto mt-14">
-            <div class="flex flex-row w-full justify-center items-center h-[400px]">
-                <div class="w-auto h-full  flex flex-col space-y-20 md:space-y-0 space-x-10  md:flex-row justify-between mr-10">
-                    <div class="w-full h-auto ml-14 ">
-
-                        <img class="w-full h-full object-cover rounded-lg" src="{{ asset('storage/images/abaut.jpg') }}" alt="Image">
+        <div class="w-full h-auto py-10 lg:px-10 mt-20">
+            <div class="grid grid-cols-1 gap-y-5 w-full justify-center items-center h-auto">
+                <div class="h-auto grid grid-cols-1 lg:grid-cols-2 gap-20 gap-y-0  lg:gap-y-20">
+                    <div class="h-auto ml-0 mr-0 lg:ml-14">
+                        <img class="w-full h-[400px]  rounded-lg" src="{{ asset('storage/images/nosotros.jpg') }}"
+                            alt="Image">
                     </div>
 
                     <div
-                        class="h-screen flex flex-col justify-center items-center col-md-5 border-gray-100 border-2 mr-14 pl-10">
-                        <div class="flex flex-row items-center w-full text-4xl font-bold text-black uppercase mt-2 ">
-                            <h2 class=" w-full h-auto flex flex-row justify-center items-center">Nuestra Compañia</h2>
+                        class="w-full h-auto flex flex-col justify-center items-center col-md-5 border-gray-100 border-2 px-5 lg:pl-10 ml-0 lg:ml-0 bg-gray-50 ">
+                        <div class="flex flex-row items-center w-full  font-bold text-black uppercase mt-2">
+                            <h2
+                                class="w-full h-auto flex flex-row justify-center items-center mt-4 mb-6 text-lg lg:text-2xl">
+                                Nuestra Compañia</h2>
                         </div>
-                        <p class="p-4 w-full  h-full flex flex-row text-justify  overflow-auto">Illum repudiandae
-                            ratione facere explicabo.
-                            Consequatur dolor optio iusto, quos autem voluptate ea?
-                            Sunt laudantium fugiat, mollitia voluptate? Modi blanditiis veniam nesciunt architecto odit
-                            voluptatum tempore impedit magnam itaque Illum repudiandae ratione facere explicabo. Consequatur
-                            dolor optio iusto, quos autem voluptate ea?
-                            Sunt laudantium fugiat, mollitia voluptate? Modi blanditiis veniam nesciunt architecto odit
-                            voluptatum tempore impedit magnam itaque natusIllum repudiandae ratione facere explicabo.
-                            Consequatur dolor optio iusto, quos autem voluptate ea?
-                            !    Sunt laudantium fugiat, mollitia voluptate? Modi blanditiis veniam nesciunt architecto odit
-                            voluptatum tempore impedit magnam itaque natusIllum repudiandae ratione facere explicabo.
-                            Consequatur dolor optio iusto, quos autem voluptate ea?
+                        <p class="h-full text-justify text-md lg:text-xl">
+                            <span class="font-bold">PH VERTICAL S.A.S</span> se destaca por su amplia experiencia en el
+                            sector y su compromiso con la satisfacción del cliente.
+                            Con una amplia trayectoria, hemos ayudado a innumerables empresas y familias a encontrar el
+                            espacio perfecto que se ajuste a sus necesidades.
                         </p>
                         <p class="w-full flex flex-row justify-end items-end">
-                            <a href="#" class="btn btn-outline-secondary rounded-0 py-2 px-5">Leer mas</a>
+                            <a href="#" class="btn btn-outline-secondary rounded-0 p-1 text-sm lg:text-lg">Leer
+                                mas</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="w-full h-auto lg:p-10">
+            <div class="my-5 mx-0 lg:mx-5">
+                <div class="grid grid-cols-1 gap-y-5 lg:gap-20 lg:grid-cols-2">
+                    <div class="bg-gray-50 p-4">
+                        <div class="w-full">
+                            <h2 class="w-full text-md lg:text-2xl  font-bold text-center text-black uppercase">Misión</h2>
+                            <p class="px-3 py-2 w-full text-sm lg:text-lg font-bold text-justify">
+                                Nuestra misión es proporcionar soluciones inmobiliarias integrales que superen las
+                                expectativas de nuestros clientes, contribuyendo al desarrollo y bienestar de la comunidad
+                                de Sincelejo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4">
+                        <div class="w-full">
+                            <h2 class="w-full text-md lg:text-2xl  font-bold text-center text-black uppercase">Visión</h2>
+                            <p class="px-3 py-2 w-full text-sm lg:text-lg  font-bold text-justify">
+                                En <strong>PH VERTICAL S.A.S.</strong> , aspiramos a ser la inmobiliaria líder en Sincelejo, reconocida por
+                                nuestra excelencia en el servicio y nuestra capacidad para satisfacer las necesidades de
+                                nuestros clientes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4">
+                        <div class="w-full">
+                            <h2 class="w-full text-md lg:text-2xl  font-bold text-center text-black uppercase">Nuestro compromiso</h2>
+                            <div class="px-3 py-2 w-full text-sm lg:text-lg  font-bold text-justify">
+                                <h1 class="font-bold mb-2">Nos comprometemos a:</h1>
+                                <ul class="list-none">
+                                    <li class="flex items-start">
+                                        <span class="text-gray-400 mr-2">✔</span>
+                                        Innovar continuamente en nuestros servicios y procesos para ofrecer soluciones
+                                        inmobiliarias modernas y eficientes.
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-gray-500 mr-2">✔</span>
+                                        Fomentar relaciones duraderas con nuestros clientes, basadas en la confianza, la
+                                        transparencia y la satisfacción mutua.
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-gray-500 mr-2">✔</span>
+                                        Contribuir al desarrollo sostenible de la comunidad de Sincelejo, promoviendo
+                                        prácticas inmobiliarias respon- sables y éticas.
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-gray-500 mr-2">✔</span>
+                                        Capacitar y empoderar a nuestro equipo de profesionales para que brinden un servicio
+                                        excepcional y personalizado.
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-gray-500 mr-2">✔</span>
+                                        Expandir nuestra presencia en el mercado local y regional, consolidándonos como la
+                                        opción preferida para la compra, venta y alquiler de propiedades.
+                                    </li>
+                                </ul>
+                            </div>
 
-        <div class="w-full mt-32  mb-10">
-            <div class="container">
-                <div class="row mb-3 justify-content-center" data-aos="fade-up">
-                    <div class="col-md-7">
-                        <div class="site-section-title text-center">
-                            <h2>Liderazgo</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magnam officiis ipsa eum
-                                pariatur
-                                labore fugit amet eaque iure vitae, repellendus laborum in modi reiciendis quis! Optio
-                                minima
-                                quibusdam, laboriosam.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4">
+                        <div class="w-full">
+                            <h2 class="w-full text-md lg:text-2xl  font-bold text-center text-black uppercase">Servicios</h2>
+                            <div class="px-3 py-2 w-full text-sm lg:text-lg  font-bold text-justify">
+                                <ul class="list-none">
+                                    <li class="flex items-start">
+                                        <span class="text-gray-400 mr-2">✔</span>
+                                        Venta y alquiler de propiedades residenciales y comer- ciales.
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-gray-500 mr-2">✔</span>
+                                        Asesoría en inversiones inmobiliarias.
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-gray-500 mr-2">✔</span>
+                                        Gestión de propiedades.
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-gray-500 mr-2">✔</span>
+                                        Avalúos y estudios de mercado.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="site-section bg-light">
-            <div class="container">
-                <div class="row mb-5 justify-content-center">
-                    <div class="col-md-7">
-                        <div class="site-section-title text-center">
-                            <h2>Nuestros Agentes</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magnam officiis ipsa eum
-                                pariatur
-                                labore fugit amet eaque iure vitae, repellendus laborum in modi reiciendis quis! Optio
-                                minima
-                                quibusdam, laboriosam.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-                        <div class="flex flex-col justify-center align-items-center  team-member mr-5">
-                            <div
-                                class="flex justify-center align-items-center p-1  border-2 border-gray-200 bg-gray-150 rounded-full w-3/5 h-64">
-                                <img src="{{ asset('storage/images/person_1.jpg') }}" alt="Image"
-                                    class="img-fluid rounded-full w-11/12">
-                            </div>
-                            <div class="text">
-
-                                <h2
-                                    class="flex flex-col justify-center align-items-center mb-2 font-weight-light text-black h4 mt-2">
-                                    Carlos Beltran</h2>
-                                <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
-                                    bienes Raíces</span>
-                                <p class="flex flex-row text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit.
-                                    Modi dolorem totam non quis facere
-                                    blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate,
-                                    vitae
-                                    minus obcaecati provident beatae!
-                                </p>
-                                <div class="w-full flex justify-end items-center text-right text-2xl">
-                                    <a href="#" class="mr-3 text-black p-2"><span class="icon-facebook"></span></a>
-                                    <a href="#" class="mr-3 text-black p-2"><span class="icon-twitter"></span></a>
-                                    <a href="#" class="mr-3 text-black p-2"><span class="icon-linkedin"></span></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-                        <div class="flex flex-col justify-center align-items-center  team-member mr-5">
-                            <div
-                                class="flex justify-center align-items-center p-1  border-2 border-gray-200 bg-gray-150 rounded-full w-3/5 h-64">
-                                <img src="{{ asset('storage/images/person_2.jpg') }}" alt="Image"
-                                    class="img-fluid rounded-full w-11/12">
-                            </div>
-                            <div class="text">
-
-                                <h2
-                                    class="flex flex-col justify-center align-items-center mb-2 font-weight-light text-black h4 mt-2">
-                                    Carlos Beltran</h2>
-                                <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
-                                    bienes Raíces</span>
-                                <p class="flex flex-row text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit.
-                                    Modi dolorem totam non quis facere
-                                    blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate,
-                                    vitae
-                                    minus obcaecati provident beatae!
-                                </p>
-                                <div class="w-full flex justify-end items-center text-right text-2xl">
-                                    <a href="#" class="mr-3 text-black p-2"><span class="icon-facebook"></span></a>
-                                    <a href="#" class="mr-3 text-black p-2"><span class="icon-twitter"></span></a>
-                                    <a href="#" class="mr-3 text-black p-2"><span class="icon-linkedin"></span></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-                        <div class="flex flex-col justify-center align-items-center  team-member mr-5">
-
-                            <div
-                                class="flex justify-center align-items-center p-1  border-2 border-gray-200 bg-gray-150 rounded-full w-3/5 h-64">
-                                <img src="{{ asset('storage/images/person_3.jpg') }}" alt="Image"
-                                    class="img-fluid rounded-full w-11/12">
-                            </div>
-                            <div class="text">
-
-                                <h2
-                                    class="flex flex-col justify-center align-items-center mb-2 font-weight-light text-black h4 mt-2">
-                                    Carlos Beltran</h2>
-                                <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
-                                    bienes Raíces</span>
-                                <p class="flex flex-row text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit.
-                                    Modi dolorem totam non quis facere
-                                    blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate,
-                                    vitae
-                                    minus obcaecati provident beatae!
-                                </p>
-                                <div class="w-full flex justify-end items-center text-right text-2xl">
-                                    <a href="#" class="mr-3 text-black p-2"><span class="icon-facebook"></span></a>
-                                    <a href="#" class="mr-3 text-black p-2"><span class="icon-twitter"></span></a>
-                                    <a href="#" class="mr-3 text-black p-2"><span class="icon-linkedin"></span></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- seccion de preguntas frecuentes -->
     </div>
 @endsection

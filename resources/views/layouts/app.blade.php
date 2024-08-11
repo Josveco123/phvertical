@@ -113,7 +113,7 @@
                                             <a class="dropdown-item" href="{{ route('all.saved.props') }}">Todas las
                                                 posibles</a>
                                                 <span class="dropdown-item">-----------</span>
-                                                <a class="dropdown-item text-gray-600" href="{{ route('form.cambio.password') }}">Cambiar su contraseña</a>
+
                                                 <a class="dropdown-item  text-gray-600" href="{{ route('logout') }}"
                                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                                     Cerrar sesion
@@ -184,9 +184,7 @@
                                 <a class="dropdown-item" href="{{ route('all.requests') }}">Todas las solicitadas</a>
                                 <a class="dropdown-item" href="{{ route('all.saved.props') }}">Todas las posibles</a>
                                 <span class="dropdown-item">-----------</span>
-                                <a class="dropdown-item text-gray-600" href="{{ route('form.cambio.password') }}">
-                                    Cambiar su contraseña
-                                </a>
+
                                 <a class="dropdown-item  text-gray-600" href="{{ route('logout') }}"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     Cerrar sesion
@@ -218,32 +216,35 @@
                         <h3 class="w-full flex flex-row justify-center items-center footer-heading mb-1">Sobre el sitio
                         </h3>
                         <div class="mb-3 w-full bg-gradient-to-r from-white via-gray-500 to-black h-1"></div>
-                        <p class="w-full flex flex-row justify-center items-center text-justify">Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id
-                            ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima
-                            minus odio!</p>
+                        <a href="https://maps.app.goo.gl/GCrE2eKR3HXLyBnu6" target="append_blank"
+                           class="w-full p-5">
+                          <img class="border rounded-lg hover:opacity-80  " src="{{asset('storage/images/sitio.jpg')}}" alt="sitio.jpg" srcset="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <div class="row w-full flex flex-row justify-center">
-                        <h3 class="mb-1 footer-heading mb-4w-full flex flex-row justify-center items-center">Navegacion
+                        <h3 class="mb-1 footer-heading mb-4w-full flex flex-row justify-center items-center">
+                            Navegacion
                         </h3>
-                        <div class="mb-3 w-full bg-gradient-to-r from-white via-gray-500 to-black h-1"></div>
-                        <div class="flex flex-row justify-center space-x-20">
-                            <div class="ml-16 flex flex-row w-auto col-md-6 col-lg-6">
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Inicio</a></li>
-                                    <li><a href="#">Comprar</a></li>
-                                    <li><a href="#">Rentar</a></li>
-                                    <li><a href="#">Propiedades</a></li>
+
+                        <div class="mb-10 w-full bg-gradient-to-r from-white via-gray-500 to-black h-1"></div>
+
+                        <div class="h-full flex flex-row justify-center items-center text-center space-x-20">
+                            <div class="h-full ml-16 flex flex-row w-auto col-md-6 col-lg-6">
+                                <ul class="list-unstyled space-y-8">
+                                    <li><a href="{{url('/')}}">Inicio</a></li>
+                                    <li><a href="{{ route('buy.prop') }}">Comprar</a></li>
+                                    <li><a href="{{ route('rent.prop') }}">Rentar</a></li>
+                                    <li><a href="{{url('/')}}">Propiedades</a></li>
                                 </ul>
                             </div>
-                            <div class="w-auto flex flex-row col-md-6 col-lg-6 ">
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Sobre Nosotros</a></li>
-                                    <li><a href="#">Politica de Privacidad</a></li>
-                                    <li><a href="#">Contactarnos</a></li>
-                                    <li><a href="#">Terminos</a></li>
+                            <div class="w-auto h-full flex flex-row col-md-6 col-lg-6 ">
+                                <ul class="list-unstyled space-y-8">
+                                    <li><a href="{{ route('about') }}">Sobre Nosotros</a></li>
+                                    <li><a href="{{route('politica.privacidad')}}" target="append_blank">Politica de Privacidad</a></li>
+                                    <li><a href="{{ route('contact') }}">Contactarnos</a></li>
+                                    <li><a href="{{route('terminos.condiciones')}}" target="append_blank">Terminos y condiciones</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -251,7 +252,7 @@
                 </div>
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <h3 class="footer-heading mb-1 w-full flex flex-row justify-center items-center">Siguenos</h3>
-                    <div class="mb-3 w-full bg-gradient-to-r from-white via-gray-500 to-black h-1"></div>
+                    <div class="mb-20 w-full bg-gradient-to-r from-white via-gray-500 to-black h-1"></div>
                     <div class="w-full flex flex-row justify-center text-4xl">
                         <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
                         <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>

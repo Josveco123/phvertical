@@ -20,7 +20,8 @@
                             @endif
                             <h1 class="mb-2">{{ $prop->title }}</h1>
                             @if ($prop->type == 'Alquilar' || $prop->type == 'Rentar')
-                                <p class="mb-5"><strong class="h2 text-success font-weight-bold">${{ $prop->price }}</strong></p>
+                                <p class="mb-5"><strong
+                                        class="h2 text-success font-weight-bold">${{ $prop->price }}</strong></p>
                             @else
                                 <p class="mb-5"><strong class="h2 text-success font-weight-bold">-----</strong></p>
                             @endif
@@ -119,7 +120,7 @@
     <div class="site-section site-section-sm bg-light">
         <div class="container">
 
-            <div class="row mb-5">
+            <div class="row">
                 @foreach ($props as $prop)
                     <div class="col-md-6 col-lg-4 mb-4">
                         <div class="property-entry h-100">
@@ -137,7 +138,8 @@
                                     {{ $prop->location }}</span>
 
                                 @if ($prop->type == 'Alquilar' || $prop->type == 'Rentar')
-                                    <strong class="property-price text-primary mb-3 d-block text-success">{{ $prop->price }}</strong>
+                                    <strong
+                                        class="property-price text-primary mb-3 d-block text-success">{{ $prop->price }}</strong>
                                 @else
                                     <strong class="property-price text-primary mb-3 d-block text-success">-----</strong>
                                 @endif
@@ -158,57 +160,58 @@
 
                                     </li>
                                 </ul>
-
                             </div>
                         </div>
                     </div>
                 @endforeach
-
-
             </div>
         </div>
     </div>
 
 
-    <div class="site-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-7 text-center">
-                    <div class="site-section-title">
-                        <h2>Por qué elegirnos?</h2>
+    <div class="pt-4">
+        <div class="pt-4 container">
+            <div class="row justify-content-center pb-10">
+                <div class="col-md-8 text-center">
+                    <div class="font-bold text-xl pb-4 uppercase text-black/80">
+                        <h2>¿Por qué elegirnos?</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maiores quisquam saepe architecto
-                        error corporis aliquam. Cum ipsam a consectetur aut sunt sint animi, pariatur corporis, eaque,
-                        deleniti cupiditate officia.</p>
+                    <p class="text-justify text-lg lg:text-xl ">Somos <strong>PH Vertical S.A.S.</strong>, una inmobiliaria en crecimiento. Nos
+                        apasiona ayudarte a encontrar el lugar perfecto
+                        para ti o tu negocio, brindándote un servicio personalizado y cercano. Conocemos a fondo el mercado
+                        inmobiliario
+                        de Sincelejo y te acompañaremos en cada paso del proceso, desde la búsqueda hasta la firma de la
+                        escritura.
+                    </p>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row pb-10">
                 <div class="col-md-6 col-lg-4">
                     <a href="#" class="service text-center">
                         <span class="icon flaticon-house"></span>
                         <h2 class="service-heading">Detalles de la zona</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure qui natus perspiciatis ex
-                            odio molestia.</p>
-                        <p><span class="read-more">Leer Mas</span></p>
+                        <p class="mb-3">Nuestras bodegas locales y viviendas están ubicadas en las mejores zonas de la
+                            ciudad de Sincelejo.</p>
+                        <p><span class="read-more border-2 border-gray-400 p-2 hover:bg-gray-200 rounded-lg">Leer Mas</span></p>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a href="#" class="service text-center">
                         <span class="icon flaticon-sold"></span>
-                        <h2 class="service-heading">Casas Vendidas</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure qui natus perspiciatis ex
-                            odio molestia.</p>
-                        <p><span class="read-more">Leer Mas</span></p>
+                        <h2 class="service-heading">Variedad</h2>
+                        <p class="mb-3">Contamos con una amplia variedad de inmuebles que cumplen con las expectativas y
+                            requerimientos de nuestros clientes.</p>
+                            <p><span class="read-more border-2 border-gray-400 p-2 hover:bg-gray-200 rounded-lg">Leer Mas</span></p>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a href="#" class="service text-center">
                         <span class="icon flaticon-camera"></span>
-                        <h2 class="service-heading">Securidad del sector</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure qui natus perspiciatis ex
-                            odio molestia.</p>
-                        <p><span class="read-more">Leer Mas</span></p>
+                        <h2 class="service-heading">Lo que ofrecemos</h2>
+                        <p class="mb-3">En <strong>PH Vertical S.A.S.</strong>  asesoramos a nuestros clientes encontrando la propiedad adecuada
+                            según sus necesidades y presupuestos, ya sea para uso residencial, comercial o industrial..</p>
+                            <p><span class="read-more border-2 border-gray-400 p-2 hover:bg-gray-200 rounded-lg">Leer Mas</span></p>
                     </a>
                 </div>
             </div>
@@ -221,10 +224,12 @@
             <div class="row mb-5 justify-content-center">
                 <div class="col-md-7">
                     <div class="site-section-title text-center">
-                        <h2>Nuestros Vendedores</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magnam officiis ipsa eum pariatur
-                            labore fugit amet eaque iure vitae, repellendus laborum in modi reiciendis quis! Optio minima
-                            quibusdam, laboriosam.</p>
+                        <h2>Nuestros Asesores</h2>
+                        <p>Nuestro equipo de profesionales altamente capacitados está dedicado a ofrecer un servicio de
+                            calidad, basado en la
+                            confianza y la transparencia. Conocemos el mercado local a fondo, lo que nos permite asesorar a
+                            nuestros clientes de
+                            manera efectiva y personalizada.</p>
                     </div>
                 </div>
             </div>
@@ -233,14 +238,14 @@
                     <div class="flex flex-col justify-center align-items-center  team-member mr-5">
                         <div
                             class="flex justify-center align-items-center p-1  border-2 border-gray-200 bg-gray-150 rounded-full w-3/5 h-64">
-                            <img src="{{ asset('storage/images/person_1.jpg') }}" alt="Image"
+                            <img src="{{ asset('storage/images/asesor1.jpeg') }}" alt="Image"
                                 class="img-fluid rounded-full w-11/12">
                         </div>
                         <div class="text">
 
                             <h2
                                 class="flex flex-col justify-center align-items-center mb-2 font-weight-light text-black h4 mt-2">
-                                Carlos Beltran</h2>
+                                Luz Elena </h2>
                             <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
                                 bienes Raíces</span>
                             <p class="flex flex-row text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -262,14 +267,14 @@
                     <div class="flex flex-col justify-center align-items-center  team-member mr-5">
                         <div
                             class="flex justify-center align-items-center p-1  border-2 border-gray-200 bg-gray-150 rounded-full w-3/5 h-64">
-                            <img src="{{ asset('storage/images/person_2.jpg') }}" alt="Image"
+                            <img src="{{ asset('storage/images/asesor2.jpg') }}" alt="Image"
                                 class="img-fluid rounded-full w-11/12">
                         </div>
                         <div class="text">
 
                             <h2
                                 class="flex flex-col justify-center align-items-center mb-2 font-weight-light text-black h4 mt-2">
-                                Carlos Beltran</h2>
+                                David Esteban</h2>
                             <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
                                 bienes Raíces</span>
                             <p class="flex flex-row text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -292,14 +297,14 @@
 
                         <div
                             class="flex justify-center align-items-center p-1  border-2 border-gray-200 bg-gray-150 rounded-full w-3/5 h-64">
-                            <img src="{{ asset('storage/images/person_3.jpg') }}" alt="Image"
+                            <img src="{{ asset('storage/images/asesor3.jpg') }}" alt="Image"
                                 class="img-fluid rounded-full w-11/12">
                         </div>
                         <div class="text">
 
                             <h2
                                 class="flex flex-col justify-center align-items-center mb-2 font-weight-light text-black h4 mt-2">
-                                Carlos Beltran</h2>
+                                Maria Angelica</h2>
                             <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
                                 bienes Raíces</span>
                             <p class="flex flex-row text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.

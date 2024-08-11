@@ -33,6 +33,14 @@ class HomeController extends Controller
         return view('pages.about');
     }
 
-
+    public function politicaprivacidad()
+    {
+        return view('pages.politicaprivacidad');
+    }
+    public function terminoscondiciones()
+    {
+        return view('pages.terminoscondiciones');
+    }
+    
 
 }

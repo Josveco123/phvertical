@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('assets/styles/style.css') }}" rel="stylesheet">
-
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
@@ -18,7 +18,7 @@
         <nav class="navbar header-top fixed-top navbar-expand-lg  navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brandclass flex flex-row w-14 h-auto text-decoration-none text-white h2 mb-0"
-                    href="#"><img src="{{ asset('storage/images/logophv.jpg') }}" alt="imagen logo" srcset=""
+                    href="{{ url('/') }}"><img src="{{ asset('storage/images/logophv.jpg') }}" alt="imagen logo" srcset=""
                         style="width: 25px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"

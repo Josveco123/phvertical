@@ -26,6 +26,8 @@ Route::middleware('auth')->group(function () {
 Route::group(['/'],function () {
     Route::get('contact', [HomeController::class, 'contact'])->name('contact');
     Route::get('about', [HomeController::class, 'about'])->name('about');
+    Route::get('politica', [HomeController::class, 'politicaprivacidad'])->name('politica.privacidad');
+    Route::get('terminos', [HomeController::class, 'terminoscondiciones'])->name('terminos.condiciones');
 });
 
 //Route::get('/about', function () {dd('Ruta de logout alcanzada');})->name('about');
