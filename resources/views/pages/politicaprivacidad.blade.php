@@ -12,7 +12,7 @@
             <!-- Sección 1: Identificación -->
             <div class="mb-6">
                 <p class="font-bold text-lg mb-2">1. Identificación del Responsable del Tratamiento</p>
-                <p>PH vertical S.A.S., con NIT xxxxxxxxxxx, domiciliada en Parque Industrial Sincelejo, es el responsable
+                <p>PH vertical S.A.S., con NIT 901.345.143-4, domiciliada en Calle 38 No 4A-184 L22 Mz C (Parque Industrial Sincelejo), es el responsable
                     del tratamiento de los datos personales recolectados a través de nuestra página web [www.PHvertical.com]
                     y otros canales de comunicación.</p>
             </div>
@@ -20,12 +20,12 @@
             <!-- Sección 2: Descripción del Tratamiento -->
             <div class="mb-6">
                 <p class="font-bold text-lg mb-2">2. Descripción del Tratamiento de Datos Personales</p>
-                <p><strong>Tipos de Datos Recolectados:</strong></p>
+                <h4 class="font-semibold">Tipos de Datos Recolectados:</h4>
                 <ul class="list-disc list-inside">
                     <li>Nombre completo</li>
                     <li>Correo electrónico</li>
                 </ul>
-                <h4 class="font-bold mt-4">Finalidad del Tratamiento:</h4>
+                <h4 class="font-semibold mt-4">Finalidad del Tratamiento:</h4>
                 <p>Los datos personales que recolectamos son utilizados para:</p>
                 <ul class="list-disc list-inside">
                     <li>Proporcionar información sobre propiedades y servicios inmobiliarios.</li>
@@ -96,10 +96,10 @@
             <div>
                 <p class="font-bold text-lg mb-2">9. Contacto</p>
                 <p>Para cualquier consulta relacionada con esta política de privacidad, puede contactarnos a:</p>
-                <p>Dirección: PHvertical SAS, Parque Industrial Sincelejo</p>
+                <p>Dirección: PHvertical SAS, Calle 38 No 4A-184 L22 Mz C, Parque Industrial Sincelejo</p>
                 <p>Email: phvertical@phvertical.com</p>
                 <p>Tel: Cel. 3113276630</p>
-                <p>Además, puede contactarnos a través de la página web <a href="https://www.phvertical.com"
+                <p>Además, puede contactarnos a través de la página web <a href="https://www.jmvc.online"
                         class="text-blue-500 underline">www.phvertical.com</a>.</p>
             </div>
         </div>

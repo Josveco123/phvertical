@@ -73,27 +73,27 @@
                                 <h1 class="font-bold mb-2">Nos comprometemos a:</h1>
                                 <ul class="list-none">
                                     <li class="flex items-start">
-                                        <span class="text-gray-400 mr-2">✔</span>
+                                        <span class="mr-2">✔</span>
                                         Innovar continuamente en nuestros servicios y procesos para ofrecer soluciones
                                         inmobiliarias modernas y eficientes.
                                     </li>
                                     <li class="flex items-start">
-                                        <span class="text-gray-500 mr-2">✔</span>
+                                        <span class="mr-2">✔</span>
                                         Fomentar relaciones duraderas con nuestros clientes, basadas en la confianza, la
                                         transparencia y la satisfacción mutua.
                                     </li>
                                     <li class="flex items-start">
-                                        <span class="text-gray-500 mr-2">✔</span>
+                                        <span class=mr-2">✔</span>
                                         Contribuir al desarrollo sostenible de la comunidad de Sincelejo, promoviendo
-                                        prácticas inmobiliarias respon- sables y éticas.
+                                        prácticas inmobiliarias responsables y éticas.
                                     </li>
                                     <li class="flex items-start">
-                                        <span class="text-gray-500 mr-2">✔</span>
+                                        <span class=" mr-2">✔</span>
                                         Capacitar y empoderar a nuestro equipo de profesionales para que brinden un servicio
                                         excepcional y personalizado.
                                     </li>
                                     <li class="flex items-start">
-                                        <span class="text-gray-500 mr-2">✔</span>
+                                        <span class="mr-2">✔</span>
                                         Expandir nuestra presencia en el mercado local y regional, consolidándonos como la
                                         opción preferida para la compra, venta y alquiler de propiedades.
                                     </li>
@@ -109,7 +109,7 @@
                                 <ul class="list-none">
                                     <li class="flex items-start">
                                         <span class="text-gray-400 mr-2">✔</span>
-                                        Venta y alquiler de propiedades residenciales y comer- ciales.
+                                        Venta y alquiler de propiedades residenciales y comerciales.
                                     </li>
                                     <li class="flex items-start">
                                         <span class="text-gray-500 mr-2">✔</span>

@@ -15,7 +15,7 @@
 
     <div class="site-section">
         <div class="container ">
-            <div class="flex flex-row lg:flex-col justify-between items-stretch">
+            <div class="flex flex-col lg:flex-row justify-between items-stretch">
 
                 <div id="contacto1" class="mb-5 border-2 border-gray-100 w-full h-full mr-10 flex-grow">
                     <h1

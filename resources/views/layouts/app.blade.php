@@ -74,7 +74,7 @@
 
                             <ul class="site-menu js-clone-nav d-none d-lg-block text-xs">
                                 <li class="active"><a href="{{ url('/') }}">Inicio</a></li>
-                                <li><a href="{{ route('buy.prop') }}">Comprar</a></li>
+                                <li><a href="{{ route('buy.prop') }}">Vender</a></li>
                                 <li><a href="{{ route('rent.prop') }}">Rentar</a></li>
                                 <li class="has-children">
                                     <a href="#">Propiedades</a>
@@ -112,12 +112,12 @@
                                                 solicitadas</a>
                                             <a class="dropdown-item" href="{{ route('all.saved.props') }}">Todas las
                                                 posibles</a>
-                                                <span class="dropdown-item">-----------</span>
+                                            <span class="dropdown-item">-----------</span>
 
-                                                <a class="dropdown-item  text-gray-600" href="{{ route('logout') }}"
-                                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                                    Cerrar sesion
-                                                </a>
+                                            <a class="dropdown-item  text-gray-600" href="{{ route('logout') }}"
+                                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                                Cerrar sesion
+                                            </a>
                                             <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                                 class="d-none">
                                                 @csrf
@@ -138,7 +138,8 @@
             aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header w-full">
 
-                <h5 class="w-full offcanvas-title text-2xl text-center items-center" id="offcanvasExampleLabel">Menú</h5>
+                <h5 class="w-full offcanvas-title text-2xl text-center items-center" id="offcanvasExampleLabel">Menú
+                </h5>
 
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
@@ -147,7 +148,7 @@
             <div class="offcanvas-body flex flex-col justify-start items-center">
                 <ul class="list-unstyled">
                     <li class="mb-2"><a href="{{ url('/') }}">Inicio</a></li>
-                    <li class="mb-2"><a href="{{ route('buy.prop') }}">Comprar</a></li>
+                    <li class="mb-2"><a href="{{ route('buy.prop') }}">Vender</a></li>
                     <li class="mb-2"><a href="{{ route('rent.prop') }}">Rentar</a></li>
                     <li class="has-children mb-2 hidden lg-flex">
                         <a href="#" class="mb-2">Propiedades</a>
@@ -216,9 +217,9 @@
                         <h3 class="w-full flex flex-row justify-center items-center footer-heading mb-1">Sobre el sitio
                         </h3>
                         <div class="mb-3 w-full bg-gradient-to-r from-white via-gray-500 to-black h-1"></div>
-                        <a href="https://maps.app.goo.gl/GCrE2eKR3HXLyBnu6" target="append_blank"
-                           class="w-full p-5">
-                          <img class="border rounded-lg hover:opacity-80  " src="{{asset('storage/images/sitio.jpg')}}" alt="sitio.jpg" srcset="">
+                        <a href="https://maps.app.goo.gl/GCrE2eKR3HXLyBnu6" target="append_blank" class="w-full p-5">
+                            <img class="border rounded-lg hover:opacity-80  "
+                                src="{{ asset('storage/images/sitio.jpg') }}" alt="sitio.jpg" srcset="">
                         </a>
                     </div>
                 </div>
@@ -233,31 +234,39 @@
                         <div class="h-full flex flex-row justify-center items-center text-center space-x-20">
                             <div class="h-full ml-16 flex flex-row w-auto col-md-6 col-lg-6">
                                 <ul class="list-unstyled space-y-8">
-                                    <li><a href="{{url('/')}}">Inicio</a></li>
-                                    <li><a href="{{ route('buy.prop') }}">Comprar</a></li>
+                                    <li><a href="{{ url('/') }}">Inicio</a></li>
+                                    <li><a href="{{ route('buy.prop') }}">Vender</a></li>
                                     <li><a href="{{ route('rent.prop') }}">Rentar</a></li>
-                                    <li><a href="{{url('/')}}">Propiedades</a></li>
+                                    <li><a href="{{ url('/') }}">Propiedades</a></li>
                                 </ul>
                             </div>
                             <div class="w-auto h-full flex flex-row col-md-6 col-lg-6 ">
                                 <ul class="list-unstyled space-y-8">
                                     <li><a href="{{ route('about') }}">Sobre Nosotros</a></li>
-                                    <li><a href="{{route('politica.privacidad')}}" target="append_blank">Politica de Privacidad</a></li>
+                                    <li><a href="{{ route('politica.privacidad') }}" target="append_blank">Politica
+                                            de Privacidad</a></li>
                                     <li><a href="{{ route('contact') }}">Contactarnos</a></li>
-                                    <li><a href="{{route('terminos.condiciones')}}" target="append_blank">Terminos y condiciones</a></li>
+                                    <li><a href="{{ route('terminos.condiciones') }}" target="append_blank">Terminos
+                                            y condiciones</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="col-lg-4 mb-4 mb-lg-0 ">
                     <h3 class="footer-heading mb-1 w-full flex flex-row justify-center items-center">Siguenos</h3>
                     <div class="mb-20 w-full bg-gradient-to-r from-white via-gray-500 to-black h-1"></div>
-                    <div class="w-full flex flex-row justify-center text-4xl">
-                        <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                        <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                        <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                        <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                    <div class="w-full flex flex-row justify-center gap-3 text-4xl py-2 ">
+                        <a class="rs w-10 h-10 pl-0 pr-3"
+                            href="https://www.facebook.com/profile.php?id=61553556872837&mibextid=ZbWKwL"
+                            target="append_blank"><span class="icon-facebook"></span></a>
+                        <a class="rs  pl-3 pr-3 filter invert opacity-50" href="https://www.tiktok.com/@ph.vertical"
+                            target="append_blank"><img class="w-10 h-10 p-1"
+                                src='{{ asset('storage/images/tiktok.svg') }}'></img></a>
+                        <a class="rs pl-3 pr-3 w-10 h-10" href="https://www.instagram.com/phvertical79/"
+                            target="append_blank"><span class="icon-instagram w-10 h-10"></span></a>
+                        <a class="rs pl-3 pr-3" href="https://www.youtube.com/@Phvertical"
+                            target="append_blank"><span class="icon-youtube "></span></a>
                     </div>
                 </div>
             </div>

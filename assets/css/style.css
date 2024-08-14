@@ -8,6 +8,16 @@ body {
     font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+#mision {
+    padding: 3px !important;
+}
+
+@media (min-width: 1024px) { /* lg en la mayoría de frameworks y configuraciones es 1024px */
+    #mision {
+        padding: 10px !important;
+    }
+}
+
 ::-moz-selection {
     background: #000;
     color: #fff;
@@ -351,7 +361,7 @@ a:hover {
 }
 
 .site-footer a:hover {
-    color: blue;
+    color: white;
 }
 
 .site-footer ul li {

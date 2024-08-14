@@ -26,7 +26,7 @@ class PropSeeder extends Seeder
             'more_info' => 'Monotonectally revolutionize open-source core competencies and market-driven resources. Dramatically myocardinate client-centered human capital and highly efficient total linkage. Efficiently re-engineer just in time markets and user friendly \r\n\r\nMonotonectally revolutionize open-source core competencies and market-driven resources. Dramatically myocardinate client-centered human capital and highly efficient total linkage. Efficiently re-engineer just in time markets and user friendly',
             'location' => ' Calle pricipal Casa 1010\n',
             'agent_name' => 'Alcira Perez',
-            'type' => 'Alquilar',
+            'type' => 'Rentar',
             'city' => 'Sincelejo',
         ]);
         Property::create([
@@ -42,7 +42,7 @@ class PropSeeder extends Seeder
             'more_info' => 'Professionally formulate leveraged vortals without alternative expertise. Enthusiastically deploy interdependent results whereas front-end web services. Intrinsicly fabricate intermandated source\r\n\r\nProfessionally formulate leveraged vortals without alternative expertise. Enthusiastically deploy interdependent results whereas front-end web services. Intrinsicly fabricate intermandated source',
             'location' => 'Clle 76 Sur entre Karreras 7 y 8 Altamar\n',
             'agent_name' => 'Luis rodriguez',
-            'type' => 'Comprar',
+            'type' => 'Vender',
             'city' => 'Sincelejo',
         ]);
         Property::create([
@@ -74,7 +74,7 @@ class PropSeeder extends Seeder
             'more_info' => 'Capital before excellent services. Objectively leverage existing interactive e-services with optimal power inexpensive human capital before excellent services. Objectively leverage existing interactive e-services with optimal',
             'location' => 'Salida la pamira las Flores\n',
             'agent_name' => 'Luis Salazar',
-            'type' => 'Comprar',
+            'type' => 'Vender',
             'city' => 'Sincelejo',
         ]);
         Property::create([

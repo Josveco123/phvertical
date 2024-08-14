@@ -4,11 +4,16 @@
     <div class="slide-one-item home-slider owl-carousel">
         @foreach ($props as $prop)
             <div class="site-blocks-cover overlay"
-                style="background-image: url({{ asset('storage/images/' . $prop->image) }});" data-aos="fade">
+                style="background-image: url({{ asset('storage/images/' . $prop->image) }});
+               background-size: cover;
+               background-position: center;
+               width: 100%;
+               height: auto;"
+                data-aos="fade">
                 <div class="container">
                     <div class="row align-items-center justify-content-center text-center">
                         <div class="col-md-10">
-                            @if ($prop->type == 'Comprar')
+                            @if ($prop->type == 'Vender')
                                 <span
                                     class="d-inline-block bg-danger text-white px-3 mb-3 property-offer-type rounded">{{ $prop->type }}</span>
                             @elseif($prop->type == 'Rentar')
@@ -19,7 +24,7 @@
                                     class="d-inline-block bg-warning text-white px-3 mb-3 property-offer-type rounded">{{ $prop->type }}</span>
                             @endif
                             <h1 class="mb-2">{{ $prop->title }}</h1>
-                            @if ($prop->type == 'Alquilar' || $prop->type == 'Rentar')
+                            @if ($prop->type == 'Rentar' || $prop->type == 'Rentar')
                                 <p class="mb-5"><strong
                                         class="h2 text-success font-weight-bold">${{ $prop->price }}</strong></p>
                             @else
@@ -62,9 +67,8 @@
                             <div class="select-wrap">
                                 <span class="icon icon-arrow_drop_down"></span>
                                 <select name="offer_types" id="offer-types" class="form-control d-block rounded-0">
-                                    <option value="Comprar">Comprar</option>
-                                    <option value="Rentar">Rentar</option>
                                     <option value="Vender">Vender</option>
+                                    <option value="Rentar">Rentar</option>
                                 </select>
                             </div>
                         </div>
@@ -102,7 +106,7 @@
                                 <a href="{{ route('home') }}"
                                     class="text-decoration-none  view-list px-3 border-right active">Todas</a>
                                 <a href="{{ route('buy.prop') }}"
-                                    class="text-decoration-none  view-list px-3 border-right">Comprar</a>
+                                    class="text-decoration-none  view-list px-3 border-right">Vender</a>
                                 <a href="{{ route('rent.prop') }}" class="text-decoration-none  view-list px-3">Rentar</a>
                                 <a href="{{ route('price.asc.prop') }}" class="text-decoration-none  view-list px-3">Por
                                     Precio Ascendente</a>
@@ -137,7 +141,7 @@
                                 <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span>
                                     {{ $prop->location }}</span>
 
-                                @if ($prop->type == 'Alquilar' || $prop->type == 'Rentar')
+                                @if ($prop->type == 'Rentar' || $prop->type == 'Rentar')
                                     <strong
                                         class="property-price text-primary mb-3 d-block text-success">{{ $prop->price }}</strong>
                                 @else
@@ -176,7 +180,8 @@
                     <div class="font-bold text-xl pb-4 uppercase text-black/80">
                         <h2>¿Por qué elegirnos?</h2>
                     </div>
-                    <p class="text-justify text-lg lg:text-xl ">Somos <strong>PH Vertical S.A.S.</strong>, una inmobiliaria en crecimiento. Nos
+                    <p class="text-justify text-lg lg:text-xl ">Somos <strong>PH Vertical S.A.S.</strong>, una inmobiliaria
+                        en crecimiento. Nos
                         apasiona ayudarte a encontrar el lugar perfecto
                         para ti o tu negocio, brindándote un servicio personalizado y cercano. Conocemos a fondo el mercado
                         inmobiliario
@@ -193,7 +198,8 @@
                         <h2 class="service-heading">Detalles de la zona</h2>
                         <p class="mb-3">Nuestras bodegas locales y viviendas están ubicadas en las mejores zonas de la
                             ciudad de Sincelejo.</p>
-                        <p><span class="read-more border-2 border-gray-400 p-2 hover:bg-gray-200 rounded-lg">Leer Mas</span></p>
+                        <p><span class="read-more border-2 border-gray-400 p-2 hover:bg-gray-200 rounded-lg">Leer
+                                Mas</span></p>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -202,16 +208,19 @@
                         <h2 class="service-heading">Variedad</h2>
                         <p class="mb-3">Contamos con una amplia variedad de inmuebles que cumplen con las expectativas y
                             requerimientos de nuestros clientes.</p>
-                            <p><span class="read-more border-2 border-gray-400 p-2 hover:bg-gray-200 rounded-lg">Leer Mas</span></p>
+                        <p><span class="read-more border-2 border-gray-400 p-2 hover:bg-gray-200 rounded-lg">Leer
+                                Mas</span></p>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a href="#" class="service text-center">
                         <span class="icon flaticon-camera"></span>
                         <h2 class="service-heading">Lo que ofrecemos</h2>
-                        <p class="mb-3">En <strong>PH Vertical S.A.S.</strong>  asesoramos a nuestros clientes encontrando la propiedad adecuada
+                        <p class="mb-3">En <strong>PH Vertical S.A.S.</strong> asesoramos a nuestros clientes encontrando
+                            la propiedad adecuada
                             según sus necesidades y presupuestos, ya sea para uso residencial, comercial o industrial..</p>
-                            <p><span class="read-more border-2 border-gray-400 p-2 hover:bg-gray-200 rounded-lg">Leer Mas</span></p>
+                        <p><span class="read-more border-2 border-gray-400 p-2 hover:bg-gray-200 rounded-lg">Leer
+                                Mas</span></p>
                     </a>
                 </div>
             </div>
@@ -248,10 +257,7 @@
                                 Luz Elena </h2>
                             <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
                                 bienes Raíces</span>
-                            <p class="flex flex-row text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Modi dolorem totam non quis facere
-                                blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate, vitae
-                                minus obcaecati provident beatae!
+                            <p class="flex flex-row text-justify">**********
                             </p>
                             <div class="w-full flex justify-end items-center text-right text-2xl">
                                 <a href="#" class="mr-3 text-black p-2"><span class="icon-facebook"></span></a>
@@ -277,10 +283,7 @@
                                 David Esteban</h2>
                             <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
                                 bienes Raíces</span>
-                            <p class="flex flex-row text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Modi dolorem totam non quis facere
-                                blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate, vitae
-                                minus obcaecati provident beatae!
+                            <p class="flex flex-row text-justify">**********
                             </p>
                             <div class="w-full flex justify-end items-center text-right text-2xl">
                                 <a href="#" class="mr-3 text-black p-2"><span class="icon-facebook"></span></a>
@@ -307,10 +310,7 @@
                                 Maria Angelica</h2>
                             <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
                                 bienes Raíces</span>
-                            <p class="flex flex-row text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Modi dolorem totam non quis facere
-                                blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate, vitae
-                                minus obcaecati provident beatae!
+                            <p class="flex flex-row text-justify">**********
                             </p>
                             <div class="w-full flex justify-end items-center text-right text-2xl">
                                 <a href="#" class="mr-3 text-black p-2"><span class="icon-facebook"></span></a>

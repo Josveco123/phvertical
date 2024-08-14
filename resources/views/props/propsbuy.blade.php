@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-center text-center">
                 <div class="col-md-10">
-                    <h1 class="mb-2">comprar propiedades</h1>
+                    <h1 class="mb-2">Vender propiedades</h1>
 
                 </div>
             </div>
@@ -23,7 +23,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="site-section-title mb-5">
-                        <h2>comprar propiedades</h2>
+                        <h2>Vender propiedades</h2>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                                     </h2>
                                     <span class="property-location d-block mb-3"><span
                                             class="property-icon icon-room"></span> {{ $relatedProp->location }}</span>
-                                    @if ($relatedProp->type == 'Alquilar' || $relatedProp->type == 'Rentar')
+                                    @if ($relatedProp->type == 'Rentar' || $relatedProp->type == 'Rentar')
                                         <strong
                                             class="property-price text-primary mb-3 d-block text-success">{{ $relatedProp->price }}</strong>
                                     @else

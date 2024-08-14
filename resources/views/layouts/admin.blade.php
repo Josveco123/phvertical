@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('assets/styles/style.css') }}" rel="stylesheet">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
@@ -89,13 +89,18 @@
                 </div>
             </div>
         </nav>
-        <div class="container-fluid">
+
+        <div id="screen-warning" class="alert alert-danger d-block d-lg-none" role="alert">
+            Esta opcion solo funciona para pantallas tamaño lg en adelante.(992px en adelante)
+        </div>
+        <div class="container-fluid d-none d-lg-block">
 
             <main class="py-4">
                 @yield('content')
             </main>
 
         </div>
+
     </div>
     </div>
     <script type="text/javascript"></script>

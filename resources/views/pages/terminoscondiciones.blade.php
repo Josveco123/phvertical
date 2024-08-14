@@ -1,7 +1,7 @@
 @extends('layouts.politica_termino')
 
 @section('content')
-    <div class="pt-20 lg:px-16">
+    <div class="lg:px-16">
         <div class="pt-20 px-4">
             <div class="mb-2">
                 <h1 class="font-bold text-xl mb-2">Términos y Condiciones de Uso</h1>
@@ -13,7 +13,7 @@
                 <p>
                     Bienvenido a la página web de PHvertical (en adelante, "la Empresa"). Al acceder y utilizar nuestro
                     sitio web
-                    <a href="http://www.phvertical.com"
+                    <a href="http://www.jmvc.online"
                         class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">www.phvertical.com</a>
                     (en adelante, "el Sitio"), usted acepta cumplir y estar sujeto a los siguientes términos y condiciones
                     de uso. Si no está de acuerdo con estos términos,
@@ -37,7 +37,7 @@
                     legal para contratar. Al usar el Sitio, usted se compromete a no utilizarlo para fines ilegales o no
                     autorizados.
                 </p>
-                <p class="font-bold">Restricciones:</p>
+                <p class="font-semibold">Restricciones:</p>
                 <ul class="list-disc ml-4">
                     <li>No podrá modificar, copiar, distribuir, transmitir, exhibir, realizar, reproducir, publicar,
                         licenciar, crear trabajos derivados, transferir o vender cualquier contenido, software, productos o
@@ -55,7 +55,7 @@
                     Empresa o de sus proveedores de contenido y está protegido por las leyes de derechos de autor de
                     Colombia y otras leyes internacionales.
                 </p>
-                <p class="font-bold">Marcas Registradas:</p>
+                <p class="font-semibold">Marcas Registradas:</p>
                 <p>
                     Las marcas registradas, nombres comerciales y logotipos que aparecen en el Sitio son propiedad de la
                     Empresa. Su uso está estrictamente prohibido sin la autorización expresa por escrito de la Empresa.
@@ -115,7 +115,8 @@
                     través de:
                 </p>
                 <p>PHvertical S.A.S.</p>
-                <p>Dirección: Parque Industrial Sincelejo</p>
+                <p>NIT. :901.345.143-4</p>
+                <p>Dirección: Calle 38 No 4A-184 L22 Mz C, Parque Industrial Sincelejo</p>
                 <p>Teléfono: 3113276630</p>
                 <p>Correo Electrónico: phvertical@phvertical.com</p>
             </div>

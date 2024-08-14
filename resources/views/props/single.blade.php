@@ -12,8 +12,9 @@
                         Propiedad</span>
                     <h1 class="mb-2">{{ $singleProp->title }}</h1>
 
-                    @if ($singleProp->type == 'Alquilar' || $singleProp->type == 'Rentar')
-                        <p class="mb-5"><strong class="h2 text-success font-weight-bold">{{ $singleProp->price }}</strong></p>
+                    @if ($singleProp->type == 'Rentar' || $singleProp->type == 'Rentar')
+                        <p class="mb-5"><strong class="h2 text-success font-weight-bold">{{ $singleProp->price }}</strong>
+                        </p>
                     @else
                         <p class="mb-5"><strong class="h2 text-success font-weight-bold">-----</strong></p>
                     @endif
@@ -44,67 +45,51 @@
         <div class="container">
             <div class="row justify-center text-center space-x-4">
                 <div class="col-lg-7 max-h-full  border-2 border-gray-300 mr-2 pt-4">
-                    <div>
-                        <div class="slide-one-item home-slider owl-carousel">
-                            @if ($propImages->isNotEmpty())
 
-                                @foreach ($propImages as $propImage)
-                                    <div class="w-full h-auto">
-                                        <img src="{{ asset('storage/images_gallery/' . $propImage->image) }}" alt="Image"
-                                            class="img-fluid" style="width: 100%; height: 600px;">
-                                    </div>
-                                @endforeach
-
-                                @else
-                                <img src="{{ asset('storage/images/' . $singleProp->image) }}" alt="Image"
-                                  class="img-fluid" style="width: 100%; height: 600px;">
-                            @endif
-                        </div>
+                    <div class="slide-one-item home-slider owl-carousel">
+                        @if ($propImages->isNotEmpty())
+                            @foreach ($propImages as $propImage)
+                                <div class="w-full h-auto">
+                                    <img src="{{ asset('storage/images_gallery/' . $propImage->image) }}"
+                                        alt="{{ $propImage->image }}" class="img-fluid" style="width: 100%; height: 600px;">
+                                </div>
+                            @endforeach
+                        @else
+                            <img src="{{ asset('storage/images/' . $singleProp->image) }}" alt="Image" class="img-fluid"
+                                style="width: 100%; height: 600px;">
+                        @endif
                     </div>
+
                     <div
                         class="flex flex-col w-full bg-white  border-bottom border-left border-right mt-2 border-2 border-gray-200">
-                        <div class="flex flex-row justify-between w-full">
-                            <div class="flex flex-row w-full items-center justify-center col-md-6 mt-4">
-                                @if ($singleProp->type == 'Alquilar' || $singleProp->type == 'Rentar')
-                                    <strong class="text-success h1 mb-3">{{ $singleProp->price }}</strong>
-                                @else
-                                    <strong class="text-success h1 mb-3">---</strong>
-                                @endif
-
-
+                        <div class="flex flex-col justify-between w-full">
+                            <div class="w-full flex flex-row border-top">
+                                <div class="col-md-6 col-lg-4 text-center py-3">
+                                    <span class="d-inline-block text-black mb-0 caption-text">Cuartos</span>
+                                    <strong class="d-block">{{ $singleProp->beds }}</strong>
+                                </div>
+                                <div class="col-md-6 col-lg-4 text-center  py-3">
+                                    <span class="d-inline-block text-black mb-0 caption-text">Baños</span>
+                                    <strong class="d-block">{{ $singleProp->baths }}</strong>
+                                </div>
+                                <div class="col-md-6 col-lg-4 text-center py-3">
+                                    <span class="d-inline-block text-black mb-0 caption-text">Mts2</span>
+                                    <strong class="d-block">{{ $singleProp->sq_ft }}</strong>
+                                </div>
                             </div>
-                            <div class="w-full flex flex-row col-md-5 mt-6 justify-end mr-20">
-                                <ul class="property-specs-wrap mb-3 mb-lg-0  float-lg-right space-x-4">
-                                    <li>
-                                        <span class="property-specs">Cuartos</span>
-                                        <span class="property-specs-number">{{ $singleProp->beds }} <sup>+</sup></span>
-
-                                    </li>
-                                    <li>
-                                        <span class="property-specs">Baños</span>
-                                        <span class="property-specs-number">{{ $singleProp->baths }}</span>
-
-                                    </li>
-                                    <li>
-                                        <span class="property-specs">Mts2</span>
-                                        <span class="property-specs-number">{{ $singleProp->sq_ft }}</span>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="w-full flex flex-row border-top">
-                            <div class="col-md-6 col-lg-4 text-center py-3">
-                                <span class="d-inline-block text-black mb-0 caption-text">Home Type</span>
-                                <strong class="d-block">{{ $singleProp->home_type }}</strong>
-                            </div>
-                            <div class="col-md-6 col-lg-4 text-center  py-3">
-                                <span class="d-inline-block text-black mb-0 caption-text">Year Built</span>
-                                <strong class="d-block">{{ $singleProp->year_built }}</strong>
-                            </div>
-                            <div class="col-md-6 col-lg-4 text-center py-3">
-                                <span class="d-inline-block text-black mb-0 caption-text">Price/Sqft</span>
-                                <strong class="d-block">${{ $singleProp->price_sqft }}</strong>
+                            <div class="w-full flex flex-row border-top">
+                                <div class="col-md-6 col-lg-4 text-center py-3">
+                                    <span class="d-inline-block text-black mb-0 caption-text">Home Type</span>
+                                    <strong class="d-block">{{ $singleProp->home_type }}</strong>
+                                </div>
+                                <div class="col-md-6 col-lg-4 text-center  py-3">
+                                    <span class="d-inline-block text-black mb-0 caption-text">Fecha</span>
+                                    <strong class="d-block">{{now()}}</strong>
+                                </div>
+                                <div class="col-md-6 col-lg-4 text-center py-3">
+                                    <span class="d-inline-block text-black mb-0 caption-text">Price/Sqft</span>
+                                    <strong class="d-block">${{ $singleProp->price_sqft }}</strong>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -117,7 +102,8 @@
                         <h3 class="h4 text-black widget-title ">Agente de Contacto</h3>
                         @if (isset(Auth::user()->id))
                             @if ($validateFormCount > 0)
-                                <p class="alert alert-success">Ya envio una solicitud de esta propiedad y la tiene registrada</p>
+                                <p class="alert alert-success">Ya envio una solicitud de esta propiedad y la tiene
+                                    registrada</p>
                             @else
                                 <form method="POST" action="{{ route('insert.request', $singleProp->id) }}"
                                     class="form-contact-agent">
@@ -203,8 +189,8 @@
                                     </div>
 
                                     <div class="form-group">
-                                       <input type="hidden" value="{{ $singleProp->price }}" name="price"
-                                          id="name" class="form-control">
+                                        <input type="hidden" value="{{ $singleProp->price }}" name="price"
+                                            id="name" class="form-control">
                                     </div>
 
                                     <div class="form-group">
@@ -248,7 +234,7 @@
                             @foreach ($propImages as $propImage)
                                 <a href="#" class="w-full h-60">
                                     <img src="{{ asset('storage/images_gallery/' . $propImage->image) }}" alt="Image"
-                                    class="w-full h-full">
+                                        class="w-full h-full">
                                 </a>
                             @endforeach
                         </div>
@@ -289,11 +275,12 @@
                                     </h2>
                                     <span class="property-location d-block mb-3"><span
                                             class="property-icon icon-room"></span> {{ $relatedProp->location }}</span>
-                                        @if ($relatedProp->type == 'Alquilar' || $relatedProp->type == 'Rentar')
-                                            <strong class="property-price text-primary mb-3 d-block text-success">{{ $relatedProp->price }}</strong>
-                                        @else
-                                            <strong class="property-price text-primary mb-3 d-block text-success">----</strong>
-                                        @endif
+                                    @if ($relatedProp->type == 'Rentar' || $relatedProp->type == 'Rentar')
+                                        <strong
+                                            class="property-price text-primary mb-3 d-block text-success">{{ $relatedProp->price }}</strong>
+                                    @else
+                                        <strong class="property-price text-primary mb-3 d-block text-success">----</strong>
+                                    @endif
 
                                     <ul class="property-specs-wrap mb-3 mb-lg-0">
                                         <li>

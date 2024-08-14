@@ -110,7 +110,7 @@ class PropertiesController extends Controller
 
     public function propsBuy() {
 
-        $type = "Comprar";
+        $type = "Vender";
 
         $propsBuy = Property::select()->where('type', $type)
          ->get();
