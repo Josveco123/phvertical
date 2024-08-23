@@ -74,8 +74,8 @@
 
                             <ul class="site-menu js-clone-nav d-none d-lg-block text-xs">
                                 <li class="active"><a href="{{ url('/') }}">Inicio</a></li>
-                                <li><a href="{{ route('buy.prop') }}">Vender</a></li>
-                                <li><a href="{{ route('rent.prop') }}">Rentar</a></li>
+                                <li><a href="{{ route('buy.prop') }}">Venta</a></li>
+                                <li><a href="{{ route('rent.prop') }}">Renta</a></li>
                                 <li class="has-children">
                                     <a href="#">Propiedades</a>
                                     <ul class="dropdown arrow-top">
@@ -148,8 +148,8 @@
             <div class="offcanvas-body flex flex-col justify-start items-center">
                 <ul class="list-unstyled">
                     <li class="mb-2"><a href="{{ url('/') }}">Inicio</a></li>
-                    <li class="mb-2"><a href="{{ route('buy.prop') }}">Vender</a></li>
-                    <li class="mb-2"><a href="{{ route('rent.prop') }}">Rentar</a></li>
+                    <li class="mb-2"><a href="{{ route('buy.prop') }}">Venta</a></li>
+                    <li class="mb-2"><a href="{{ route('rent.prop') }}">Renta</a></li>
                     <li class="has-children mb-2 hidden lg-flex">
                         <a href="#" class="mb-2">Propiedades</a>
                         <ul class="dropdown arrow-top ">
@@ -235,8 +235,8 @@
                             <div class="h-full ml-16 flex flex-row w-auto col-md-6 col-lg-6">
                                 <ul class="list-unstyled space-y-8">
                                     <li><a href="{{ url('/') }}">Inicio</a></li>
-                                    <li><a href="{{ route('buy.prop') }}">Vender</a></li>
-                                    <li><a href="{{ route('rent.prop') }}">Rentar</a></li>
+                                    <li><a href="{{ route('buy.prop') }}">Venta</a></li>
+                                    <li><a href="{{ route('rent.prop') }}">Renta</a></li>
                                     <li><a href="{{ url('/') }}">Propiedades</a></li>
                                 </ul>
                             </div>
@@ -257,11 +257,11 @@
                     <h3 class="footer-heading mb-1 w-full flex flex-row justify-center items-center">Siguenos</h3>
                     <div class="mb-20 w-full bg-gradient-to-r from-white via-gray-500 to-black h-1"></div>
                     <div class="w-full flex flex-row justify-center gap-3 text-4xl py-2 ">
-                        <a class="rs w-10 h-10 pl-0 pr-3"
+                        <a class="rs w-10 h-10 pl-0 pr-3 "
                             href="https://www.facebook.com/profile.php?id=61553556872837&mibextid=ZbWKwL"
                             target="append_blank"><span class="icon-facebook"></span></a>
-                        <a class="rs  pl-3 pr-3 filter invert opacity-50" href="https://www.tiktok.com/@ph.vertical"
-                            target="append_blank"><img class="w-10 h-10 p-1"
+                        <a class="rs  pl-3 pr-3 filter invert opacity-50 " href="https://www.tiktok.com/@ph.vertical"
+                            target="append_blank"><img class="w-10 h-10 p-1 "
                                 src='{{ asset('storage/images/tiktok.svg') }}'></img></a>
                         <a class="rs pl-3 pr-3 w-10 h-10" href="https://www.instagram.com/phvertical79/"
                             target="append_blank"><span class="icon-instagram w-10 h-10"></span></a>

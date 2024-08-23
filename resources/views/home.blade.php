@@ -13,10 +13,10 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-center text-center">
                         <div class="col-md-10">
-                            @if ($prop->type == 'Vender')
+                            @if ($prop->type == 'Venta')
                                 <span
                                     class="d-inline-block bg-danger text-white px-3 mb-3 property-offer-type rounded">{{ $prop->type }}</span>
-                            @elseif($prop->type == 'Rentar')
+                            @elseif($prop->type == 'Renta')
                                 <span
                                     class="d-inline-block bg-success text-white px-3 mb-3 property-offer-type rounded">{{ $prop->type }}</span>
                             @else
@@ -24,7 +24,7 @@
                                     class="d-inline-block bg-warning text-white px-3 mb-3 property-offer-type rounded">{{ $prop->type }}</span>
                             @endif
                             <h1 class="mb-2">{{ $prop->title }}</h1>
-                            @if ($prop->type == 'Rentar' || $prop->type == 'Rentar')
+                            @if ($prop->type == 'Renta' || $prop->type == 'Renta')
                                 <p class="mb-5"><strong
                                         class="h2 text-success font-weight-bold">${{ $prop->price }}</strong></p>
                             @else
@@ -67,8 +67,8 @@
                             <div class="select-wrap">
                                 <span class="icon icon-arrow_drop_down"></span>
                                 <select name="offer_types" id="offer-types" class="form-control d-block rounded-0">
-                                    <option value="Vender">Vender</option>
-                                    <option value="Rentar">Rentar</option>
+                                    <option value="Venta">Venta</option>
+                                    <option value="Renta">Renta</option>
                                 </select>
                             </div>
                         </div>
@@ -106,8 +106,8 @@
                                 <a href="{{ route('home') }}"
                                     class="text-decoration-none  view-list px-3 border-right active">Todas</a>
                                 <a href="{{ route('buy.prop') }}"
-                                    class="text-decoration-none  view-list px-3 border-right">Vender</a>
-                                <a href="{{ route('rent.prop') }}" class="text-decoration-none  view-list px-3">Rentar</a>
+                                    class="text-decoration-none  view-list px-3 border-right">Venta</a>
+                                <a href="{{ route('rent.prop') }}" class="text-decoration-none  view-list px-3">Renta</a>
                                 <a href="{{ route('price.asc.prop') }}" class="text-decoration-none  view-list px-3">Por
                                     Precio Ascendente</a>
                                 <a href="{{ route('price.desc.prop') }}" class="text-decoration-none  view-list px-3">Por
@@ -136,18 +136,14 @@
                                     class="img-fluid w-full h-80">
                             </a>
                             <div class="p-4 property-body">
-                                <h2 class="property-title"><a class="text-decoration-none"
+                                <h2 class="property-title"><a class=" text-decoration-none  w-full flex flex-row justify-center "
                                         href="{{ route('single.prop', $prop->id) }}">{{ $prop->title }}</a></h2>
-                                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span>
+                                <div class="w-full flex flex-row justify-center ">
+                                <span class="property-icon icon-room"></span>
                                     {{ $prop->location }}</span>
-
-                                @if ($prop->type == 'Rentar' || $prop->type == 'Rentar')
-                                    <strong
-                                        class="property-price text-primary mb-3 d-block text-success">{{ $prop->price }}</strong>
-                                @else
-                                    <strong class="property-price text-primary mb-3 d-block text-success">-----</strong>
-                                @endif
-                                <ul class="property-specs-wrap mb-3 mb-lg-0">
+                                </div>
+                                    <strong class="flex flex-row justify-center items-center">**********************</strong>
+                                <ul class="property-specs-wrap mb-3  flex flex-row justify-center gap-20">
                                     <li>
                                         <span class="property-specs">Cuartos</span>
                                         <span class="property-specs-number">{{ $prop->beds }} <sup>+</sup></span>
@@ -257,8 +253,7 @@
                                 Luz Elena </h2>
                             <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
                                 bienes Raíces</span>
-                            <p class="flex flex-row text-justify">**********
-                            </p>
+
                             <div class="w-full flex justify-end items-center text-right text-2xl">
                                 <a href="#" class="mr-3 text-black p-2"><span class="icon-facebook"></span></a>
                                 <a href="#" class="mr-3 text-black p-2"><span class="icon-twitter"></span></a>
@@ -283,8 +278,7 @@
                                 David Esteban</h2>
                             <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
                                 bienes Raíces</span>
-                            <p class="flex flex-row text-justify">**********
-                            </p>
+
                             <div class="w-full flex justify-end items-center text-right text-2xl">
                                 <a href="#" class="mr-3 text-black p-2"><span class="icon-facebook"></span></a>
                                 <a href="#" class="mr-3 text-black p-2"><span class="icon-twitter"></span></a>
@@ -310,8 +304,7 @@
                                 Maria Angelica</h2>
                             <span class="w-full flex flex-col text-center d-block mb-3 text-white-opacity-05">Agente de
                                 bienes Raíces</span>
-                            <p class="flex flex-row text-justify">**********
-                            </p>
+
                             <div class="w-full flex justify-end items-center text-right text-2xl">
                                 <a href="#" class="mr-3 text-black p-2"><span class="icon-facebook"></span></a>
                                 <a href="#" class="mr-3 text-black p-2"><span class="icon-twitter"></span></a>

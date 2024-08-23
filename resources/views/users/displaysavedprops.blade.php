@@ -44,12 +44,8 @@
                                     <span class="property-location d-block mb-3"><span
                                             class="property-icon icon-room"></span> {{ $relatedProp->location }}</span>
 
-                                        @if ($relatedProp->type == 'Rentar' || $relatedProp->type == 'Rentar')
-                                            <strong class="property-price text-primary mb-3 d-block text-success">${{ $relatedProp->price }}</strong>
-                                        @else
                                             <strong class="property-price text-primary mb-3 d-block text-success">---</strong>
-                                        @endif
-                                </div>
+                                 </div>
                                 <div class="mb-4 mr-10 text-right h-full">
                                     <form action="{{ route('sacar.props', $relatedProp->id) }}" method="POST" style="display: inline;">
                                         @csrf

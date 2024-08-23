@@ -46,7 +46,7 @@
                                     </h2>
                                     <span class="property-location d-block mb-3"><span
                                             class="property-icon icon-room"></span> {{ $relatedProp->location }}</span>
-                                    @if ($relatedProp->type == 'Rentar' || $relatedProp->type == 'Rentar')
+                                    @if ($relatedProp->type == 'Renta' || $relatedProp->type == 'Renta')
                                         <strong
                                             class="property-price text-primary mb-3 d-block text-success">{{ $relatedProp->price }}</strong>
                                     @else

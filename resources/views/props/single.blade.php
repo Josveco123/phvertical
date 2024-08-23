@@ -12,12 +12,7 @@
                         Propiedad</span>
                     <h1 class="mb-2">{{ $singleProp->title }}</h1>
 
-                    @if ($singleProp->type == 'Rentar' || $singleProp->type == 'Rentar')
-                        <p class="mb-5"><strong class="h2 text-success font-weight-bold">{{ $singleProp->price }}</strong>
-                        </p>
-                    @else
                         <p class="mb-5"><strong class="h2 text-success font-weight-bold">-----</strong></p>
-                    @endif
 
                 </div>
             </div>
@@ -264,7 +259,7 @@
                             <div class="property-entry h-100">
                                 <a href="{{ route('single.prop', $relatedProp->id) }}" class="property-thumbnail">
                                     <div class="offer-type-wrap">
-                                        <span class="offer-type bg-success">Rentar</span>
+                                        <span class="offer-type bg-success">Renta</span>
                                     </div>
                                     <img src="{{ asset('storage/images/' . $relatedProp->image) }}" alt="Image"
                                         class="img-fluid h-80">
@@ -275,7 +270,7 @@
                                     </h2>
                                     <span class="property-location d-block mb-3"><span
                                             class="property-icon icon-room"></span> {{ $relatedProp->location }}</span>
-                                    @if ($relatedProp->type == 'Rentar' || $relatedProp->type == 'Rentar')
+                                    @if ($relatedProp->type == 'Renta' || $relatedProp->type == 'Renta')
                                         <strong
                                             class="property-price text-primary mb-3 d-block text-success">{{ $relatedProp->price }}</strong>
                                     @else

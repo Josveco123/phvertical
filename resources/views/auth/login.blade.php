@@ -86,7 +86,7 @@
                             </div>
 
                             <div class="row mb-0">
-                                <div class="w-full mb-0 flex flex-row justify-center items-center space-x-10">
+                                <div class="w-full mb-0 flex flex-col lg:flex-row justify-center items-center lg:space-x-10">
                                     <div class="w-auto border-2">
                                         <button type="submit" class="btn btn-primary">
                                             Enviar
