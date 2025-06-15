@@ -49,6 +49,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('gallery.all') }}" style="margin-left: 20px;">Gallery</a>
                             </li>
+                                                        <li class="nav-item">
+                               <a class="nav-link" href="{{ route('videos.index') }}" style="margin-left: 20px;">Videos</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('requests.all') }}"
                                     style="margin-left: 20px;">Peticiones</a>

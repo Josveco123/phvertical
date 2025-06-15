@@ -3,7 +3,7 @@
 @section('content')
     <div class="h-auto">
         <div class="site-blocks-cover inner-page-cover overlay"
-            style="background-image: url({{ asset('storage/images/hero_bg_2.jpg') }});" data-aos="fade"
+            style="background-image: url({{ asset('public/storage/images/hero_bg_2.jpg') }});" data-aos="fade"
             data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
@@ -18,7 +18,7 @@
             <div class="grid grid-cols-1 gap-y-5 w-full justify-center items-center h-auto">
                 <div class="h-auto grid grid-cols-1 lg:grid-cols-2 gap-20 gap-y-0  lg:gap-y-20">
                     <div class="h-auto ml-0 mr-0 lg:ml-14">
-                        <img class="w-full h-[400px]  rounded-lg" src="{{ asset('storage/images/nosotros.jpg') }}"
+                        <img class="w-full h-[400px]  rounded-lg" src="{{ asset('public/storage/images/nosotros.jpg') }}"
                             alt="Image">
                     </div>
 

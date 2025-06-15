@@ -4,7 +4,7 @@
 @section('content')
 
     <div class="site-blocks-cover inner-page-cover overlay"
-        style="background-image: url({{ asset('storage/images/hero_bg_2.jpg') }});" data-aos="fade">
+        style="background-image: url({{ asset('public/storage/images/hero_bg_2.jpg') }});" data-aos="fade">
         <div class="container">
             <div class="row align-items-center justify-content-center text-center">
                 <div class="col-md-10">
@@ -37,7 +37,7 @@
                                     <div class="offer-type-wrap">
                                         <span class="offer-type bg-danger">{{ $relatedProp->type }}</span>
                                     </div>
-                                    <img src="{{ asset('storage/images/' . $relatedProp->image) }}" alt="Image"
+                                    <img src="{{ asset('public/storage/images/' . $relatedProp->image) }}" alt="Image"
                                         class="img-fluid" style="height: 350px; width: 100%;">
                                 </a>
                                 <div class="p-4 property-body">
@@ -46,7 +46,7 @@
                                     </h2>
                                     <span class="property-location d-block mb-3"><span
                                             class="property-icon icon-room"></span> {{ $relatedProp->location }}</span>
-                                    @if ($relatedProp->type == 'Rentar' || $relatedProp->type == 'Rentar')
+                                    @if ($relatedProp->type == 'Renta' || $relatedProp->type == 'Renta')
                                         <strong
                                             class="property-price text-primary mb-3 d-block text-success">{{ $relatedProp->price }}</strong>
                                     @else

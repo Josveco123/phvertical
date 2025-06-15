@@ -7,6 +7,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Props\PropertiesController;
 use App\Http\Controllers\Users\UsersController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\VideoController;
 
 
 
@@ -115,5 +116,11 @@ Route::group(['prefix' => 'admin',], function () {
     Route::get('/delete-props/{id}', [AdminsController::class, 'deleteProps'])->name('props.delete');
 });
 
+Route::get('/videos/{video}/{title}', [VideoController::class, 'show'])->name('videos.show');
+
+// Rutas protegidas por autenticación de admin
+Route::prefix('admin')->middleware(['auth:admin'])->group(function () {
+    Route::resource('videos', VideoController::class)->except(['show'])->names('videos');
+});
 
 require __DIR__.'/auth.php';

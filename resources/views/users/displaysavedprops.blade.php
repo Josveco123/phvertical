@@ -4,7 +4,7 @@
 @section('content')
 
     <div class="site-blocks-cover inner-page-cover overlay"
-        style="background-image: url({{ asset('storage/images/hero_bg_2.jpg') }});" data-aos="fade">
+        style="background-image: url({{ asset('public/storage/images/hero_bg_2.jpg') }});" data-aos="fade">
         <div class="container">
             <div class="row align-items-center justify-content-center text-center">
                 <div class="col-md-10">
@@ -34,7 +34,7 @@
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="property-entry h-100">
                                 <a href="{{ route('single.prop', $relatedProp->prop_id) }}" class="property-thumbnail ">
-                                    <img src="{{ asset('storage/images/'.$relatedProp->image) }}" alt="Image 1"
+                                    <img src="{{ asset('public/storage/images/'.$relatedProp->image) }}" alt="Image 1"
                                         class="img-fluid h-80">
                                 </a>
                                 <div class="p-4 property-body">
@@ -44,12 +44,8 @@
                                     <span class="property-location d-block mb-3"><span
                                             class="property-icon icon-room"></span> {{ $relatedProp->location }}</span>
 
-                                        @if ($relatedProp->type == 'Rentar' || $relatedProp->type == 'Rentar')
-                                            <strong class="property-price text-primary mb-3 d-block text-success">${{ $relatedProp->price }}</strong>
-                                        @else
                                             <strong class="property-price text-primary mb-3 d-block text-success">---</strong>
-                                        @endif
-                                </div>
+                                 </div>
                                 <div class="mb-4 mr-10 text-right h-full">
                                     <form action="{{ route('sacar.props', $relatedProp->id) }}" method="POST" style="display: inline;">
                                         @csrf

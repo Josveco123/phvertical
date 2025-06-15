@@ -15,7 +15,8 @@ class PropertiesController extends Controller
 
     public function index() {
 
-        $props = Property::take(9)->orderBy('id', 'DESC')->get();
+       //  $props = Property::take(9)->orderBy('id', 'DESC')->get();
+        $props = Property::orderBy('id', 'DESC')->get();
         return view('home', compact('props'));
     }
 
@@ -110,7 +111,7 @@ class PropertiesController extends Controller
 
     public function propsBuy() {
 
-        $type = "Vender";
+        $type = "Venta";
 
         $propsBuy = Property::select()->where('type', $type)
          ->get();
@@ -121,7 +122,7 @@ class PropertiesController extends Controller
 
     public function propsRent() {
 
-        $type = "Rentar";
+        $type = "Renta";
 
         $propsRent = Property::select()->where('type', $type)
          ->get();

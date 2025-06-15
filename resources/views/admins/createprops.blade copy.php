@@ -50,9 +50,8 @@
                     </select>
                     <select name="type" class="form-control mt-3 mb-4 form-select" aria-label="Default select example">
                         <option selected>Seleccione Tipos</option>
-                        <option value="Vender">Vender</option>
-                        <option value="Rentar">Rentar</option>
-                        <option value="Rentar">Alquiler</option>
+                        <option value="Venta">Venta</option>
+                        <option value="Renta">Renta</option>
                     </select>
                     <select name="city" class="form-control mt-3 mb-4 form-select" aria-label="Default select example">
                       <option selected>Select City</option>

@@ -20,7 +20,7 @@ class savedpropSeeder extends Seeder
             'image'=> 'hero_bg_2.jpg',
             'location'=> 'Calle pricipal Casa 1010\n',
             'price'=> '200,000,000',
-            'type'=> 'Rentar',
+            'type'=> 'Renta',
            ]);
            SavedProp::create([
             'prop_id'=> '2',
@@ -29,7 +29,7 @@ class savedpropSeeder extends Seeder
             'image'=> 'hero_bg_3.jpg',
             'location'=> 'Clle 76 Sur entre Karreras 7 y 8 Altamar\n',
             'price'=> '245,000,000',
-            'type'=> 'Vender',
+            'type'=> 'Venta',
            ]);
            SavedProp::create([
             'prop_id'=> '5',
@@ -38,7 +38,7 @@ class savedpropSeeder extends Seeder
             'image'=> 'hero_bg_5.jpg',
             'location'=> 'Vereda san miguel K2',
             'price'=> '20,000,000',
-            'type'=> 'Rentar',
+            'type'=> 'Renta',
              ]);
     }
 }

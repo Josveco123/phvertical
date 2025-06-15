@@ -87,9 +87,8 @@
                 @endif
                 <select name="type" class="form-control mt-3 mb-4 form-select" aria-label="Default select example">
                     <option selected>Seleccione Tipos</option>
-                    <option value="Vender" {{ old('type') == 'Vender' ? 'selected' : '' }}>Vender</option>
-                    <option value="Rentar" {{ old('type') == 'Rentar' ? 'selected' : '' }}>Rentar</option>
-                    <option value="Rentar" {{ old('type') == 'Rentar' ? 'selected' : '' }}>Alquiler</option>
+                    <option value="Venta" {{ old('type') == 'Venta' ? 'selected' : '' }}>Venta</option>
+                    <option value="Renta" {{ old('type') == 'Renta' ? 'selected' : '' }}>Renta</option>
                 </select>
                 @if ($errors->has('type'))
                     <div class="text-danger">{{ $errors->first('type') }}</div>

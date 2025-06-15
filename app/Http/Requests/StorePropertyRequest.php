@@ -29,7 +29,7 @@ class StorePropertyRequest extends FormRequest
             'beds' => 'required|integer|min:0',
             'baths' => 'required|integer|min:0',
             'sq_ft' => 'required|numeric|min:0',
-            'year_built' => 'required|integer|min:1800|max:' . date('Y'),
+            'year_built' => 'required|integer|min:0|max:' . date('Y'),
             'price_sqft' => 'required|numeric|min:0',
             'location' => 'required|string|max:255',
             'home_type' => 'required|string|max:255',

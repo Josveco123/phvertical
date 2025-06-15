@@ -19,7 +19,7 @@
         <nav class="navbar header-top fixed-top navbar-expand-lg  navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brandclass flex flex-row w-14 h-auto text-decoration-none text-white h2 mb-0"
-                    href="{{ url('/') }}"><img src="{{ asset('storage/images/logophv.jpg') }}" alt="imagen logo" srcset=""
+                    href="{{ url('/') }}"><img src="{{ asset('public/storage/images/logophv.jpg') }}" alt="imagen logo" srcset=""
                         style="width: 25px;">
                 </a>
 

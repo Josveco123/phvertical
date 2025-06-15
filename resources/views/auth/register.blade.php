@@ -99,7 +99,7 @@
                                 </div>
                             </div>
                             <div class="w-full mb-0 flex flex-row justify-center items-center space-x-20">
-                                <div class="w-auto ">
+                                <div class="w-auto ml-10">
                                     <button type="submit" class="btn btn-primary">
                                         Registrarse
                                     </button>

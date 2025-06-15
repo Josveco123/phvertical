@@ -3,8 +3,8 @@
 
 @section('content')
 
-    <div class="site-blocks-cover inner-page-cover overlay w-full h-auto"
-        style="background-image: url({{ asset('storage/images/' . $singleProp->image) }});" data-aos="fade">
+    <div class="site-blocks-cover inner-page-cover overlay w-full h-auto relative"
+        style="background-image: url({{ asset('public/storage/images/' . $singleProp->image) }});" data-aos="fade">
         <div class="container">
             <div class="row align-items-center justify-content-center text-center">
                 <div class="col-md-10">
@@ -12,11 +12,21 @@
                         Propiedad</span>
                     <h1 class="mb-2">{{ $singleProp->title }}</h1>
 
-                    @if ($singleProp->type == 'Rentar' || $singleProp->type == 'Rentar')
-                        <p class="mb-5"><strong class="h2 text-success font-weight-bold">{{ $singleProp->price }}</strong>
-                        </p>
-                    @else
-                        <p class="mb-5"><strong class="h2 text-success font-weight-bold">-----</strong></p>
+                    <p class="mb-5"><strong class="h2 text-success font-weight-bold">-----</strong></p>
+
+                    <!-- Link superpuesto -->
+
+                    <!-- Solo muestra el botón si hay video -->
+                    @if ($singleProp->video)
+                        <a href="{{ route('videos.show', [$singleProp->video,$singleProp->title]) }}" 
+                            class="absolute bottom-0 right-0 mb-2 mr-4 z-50 text-white font-bold bg-black bg-opacity-50 px-3 py-2 rounded">
+                            Ver video
+                        </a>
+                    @endif
+                    @if (session('error'))
+                        <div class="absolute right-0 mr-4 z-50 text-white font-bold bg-black bg-opacity-50 px-3 py-2">
+                            {{ session('error') }}
+                        </div>
                     @endif
 
                 </div>
@@ -50,12 +60,12 @@
                         @if ($propImages->isNotEmpty())
                             @foreach ($propImages as $propImage)
                                 <div class="w-full h-auto">
-                                    <img src="{{ asset('storage/images_gallery/' . $propImage->image) }}"
+                                    <img src="{{ asset('public/storage/images_gallery/' . $propImage->image) }}"
                                         alt="{{ $propImage->image }}" class="img-fluid" style="width: 100%; height: 600px;">
                                 </div>
                             @endforeach
                         @else
-                            <img src="{{ asset('storage/images/' . $singleProp->image) }}" alt="Image" class="img-fluid"
+                            <img src="{{ asset('public/storage/images/' . $singleProp->image) }}" alt="Image" class="img-fluid"
                                 style="width: 100%; height: 600px;">
                         @endif
                     </div>
@@ -233,7 +243,7 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mr-20">
                             @foreach ($propImages as $propImage)
                                 <a href="#" class="w-full h-60">
-                                    <img src="{{ asset('storage/images_gallery/' . $propImage->image) }}" alt="Image"
+                                    <img src="{{ asset('public/storage/images_gallery/' . $propImage->image) }}" alt="Image"
                                         class="w-full h-full">
                                 </a>
                             @endforeach
@@ -264,9 +274,9 @@
                             <div class="property-entry h-100">
                                 <a href="{{ route('single.prop', $relatedProp->id) }}" class="property-thumbnail">
                                     <div class="offer-type-wrap">
-                                        <span class="offer-type bg-success">Rentar</span>
+                                        <span class="offer-type bg-success">Renta</span>
                                     </div>
-                                    <img src="{{ asset('storage/images/' . $relatedProp->image) }}" alt="Image"
+                                    <img src="{{ asset('public/storage/images/' . $relatedProp->image) }}" alt="Image"
                                         class="img-fluid h-80">
                                 </a>
                                 <div class="p-4 property-body">
@@ -275,7 +285,7 @@
                                     </h2>
                                     <span class="property-location d-block mb-3"><span
                                             class="property-icon icon-room"></span> {{ $relatedProp->location }}</span>
-                                    @if ($relatedProp->type == 'Rentar' || $relatedProp->type == 'Rentar')
+                                    @if ($relatedProp->type == 'Renta' || $relatedProp->type == 'Renta')
                                         <strong
                                             class="property-price text-primary mb-3 d-block text-success">{{ $relatedProp->price }}</strong>
                                     @else

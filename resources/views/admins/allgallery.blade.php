@@ -45,7 +45,7 @@
                         <td>${{ $gallery->image }}</td>
                         <td>
                             <!-- Establecer tamaño específico con Tailwind -->
-                            <img src="{{ asset('storage/images_gallery/'.$gallery->image) }}" alt="Image"
+                            <img src="{{ asset('public/storage/images_gallery/'.$gallery->image) }}" alt="Image"
                                  style="width: 80px; height:60px;">
                         </td>
                         <td>

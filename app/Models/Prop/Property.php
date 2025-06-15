@@ -5,6 +5,7 @@ namespace App\Models\Prop;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Prop\PropImage;
+use App\Models\Video\Video;
 
 class Property extends Model
 {
@@ -42,5 +43,8 @@ class Property extends Model
         return $this->hasMany(PropImage::class, 'prop_id');
     }
 
-
+public function video()
+{
+    return $this->hasOne(Video::class, 'id_props');
+}
 }
